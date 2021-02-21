@@ -136,6 +136,16 @@ Nincsenek megvásárolt komponenseink.
 A weboldal használatához egy egyszerű böngészőre van szükség, így akármilyen platformon elérhető, nem létfontosságú, hogy a személy egy irodai környezetben legyen. Akár egy tabletről is le tudjuk foglalni a megfelelő férőhelyeket.
 
 ## Architekturális terv
+**Backend**
+- A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySQL-t használunk.
+- A kliens oldali programokat egy PHP alapú REST api szolgálja ki, ez csatlakozik az adatbázis szerverhez. A kliensekkel JSON objektumok segítségével kommunikál.
+    
+**Frontend**
+- A Webes felület főként PHP segítségével fog készülni.
+- Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében.
+- Képes lesz felhasználni a Backend részen futó szolgáltatás metódusait, ezáltal tud felvinni és lekérdezni adatokat az adatbázisból.
+
+
 
 ## Adatbázis terv
 
