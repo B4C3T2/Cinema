@@ -36,8 +36,8 @@ A cél, hogy adott időközre megkapjuk, hogy mely ülések szabadok, illetve fo
 - Regisztrált felhasználók
    
 **Üzleti folyamatok**
-- Adatok rendszerbe való bevitele, módosítása.
-- Hozzáférés az adatbázishoz.
+- Adatok rendszerbe való bevitele, módosítása
+- Hozzáférés az adatbázishoz
 
 ## Követelmények
 **Funkcionális**
@@ -73,7 +73,44 @@ AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) 
 | Funkció| K6| Lemondás|1.0| A vendég bármikor lemondhatja a foglalást jelen időpontra vonatkozólag. |
 
 ## Funkcionális terv
+**A felhasználó, mint a rendszer felhasználója**
+- Lekérdezheti a szabad férőhelyeket egy adott időközre, kérése szerint.
+- Betáplálhatja a rendszerbe a kérést miszerint melyik filmre, melyik időintervallumban, hány férőhelyet foglalna le.
+- Betáplálhatja saját adatait a rendszerbe a foglaláshoz.
+- Le tudja foglalni a megfelelő helyet.
+- Megszüntetheti illetve módosíthatja a foglalást.
+- A rendszer segítségével ki tudja nyomtatni a számlát.
 
+**Menü hierarchiák**
+- Kezdőlap
+  - Foglalás adatai
+      - Fizetés adatok
+vagy
+- Kezdőlap
+  - Regisztáció adatai	  
+	  
+*Férőhelyek lekérdezése:*
+- Kezdés dátuma
+- Befejezés dátuma
+- Szabad és foglalt ülőhelyek
+
+*Vendég létrehozása:*
+- Név
+- Email
+- Telefonszám
+    > Létrehoz
+
+*Foglalás:*
+- Film címe
+- Kezdés dátuma
+- Befejezés dátuma 
+- Szabad és foglalt ülőhelyek
+- Kiválasztott ülőhelyek
+- Felhasználó által kiválasztott ülőhelyek száma
+	 >Foglal
+
+**Képernyő tervek**
+>Képernyőtervek -még nincs meghatározva
 ## Fizikai környezet
 
 ## Architekturális terv
