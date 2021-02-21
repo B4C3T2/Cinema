@@ -29,6 +29,15 @@ A backend fejlesztése Java, a frontend fejlesztése pedig PHP segítségével f
 	-még nincs meghatározva
 
 ## Üzleti folyamatok modellje
+A regisztrált felhasználó közvetlen kapcsolatban áll a rendszerünkkel. A weboldal megnyitásakor megnyílik a főoldalunk, ahol található a Bejelentkezés valamint a Regisztáció. Bejelentkezés után elérhetővé válik a foglalási oldal. Kiválaszthatjuk, hogy mely filmre melyik időpontban szeretnénk jegyet foglalni, valamint láthatjuk, hogy mely férőhelyek szabadok vagy foglaltak az adott intervallumon. A mező kijelölésével tudjuk kiválasztani a kívánt és szabad ülőhelyeket.
+A cél, hogy adott időközre megkapjuk, hogy mely ülések szabadok, illetve foglaltak. A vendégek választhatnak, hogy hány főre foglalnak helyet, illetve a rendszer eszerint állapítja meg az árat. A rendszernek számon kell tartania az adott időközben foglalt ülőhelyeket, ezekre ne engedjen több foglalást, amíg az adott foglalás ideje le nem jár. A számlát a vendég érkezéskor kapja meg és fizeti ki.
+
+**Üzleti szereplők**
+- Regisztrált felhasználók
+   
+**Üzleti folyamatok**
+- Adatok rendszerbe való bevitele, módosítása.
+- Hozzáférés az adatbázishoz.
 
 ## Követelmények
 
