@@ -40,6 +40,37 @@ A cél, hogy adott időközre megkapjuk, hogy mely ülések szabadok, illetve fo
 - Hozzáférés az adatbázishoz.
 
 ## Követelmények
+**Funkcionális**
+- Webes környezetben futattható legyen.
+- Felhasználók adatainak tárolása, listázása.
+    
+**Nemfunkcionális**
+- Gyors listázás.
+- Egyszerű, egyértelmű navigációs felület.
+
+**Törvényi előírások, szabványok**
+>  2016. évi XCIII. törvény a szerzői jogok és a szerzői joghoz kapcsolódó jogok közös kezeléséről
+    
+>  1997. évi CLV. törvény a fogyasztó védelemről
+    
+>   1999. évi L XXVI. törvény a szerzői jogról 210/2009. (IX. 29.) Korm. rendelet a kereskedelmi tevékenységek végzésének feltételeiről
+     
+
+AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) A természetes személyeknek a személyes adatok kezelése tekintetében történő védelméről és az ilyen adatok szabad áramlásáról, valamint a 95/46/EK rendelet hatályon kívül helyezéséről (általános adatvédelmi rendelet) AZ EURÓPAI PARLAMENT ÉS A TANÁCS (EU) 2016/679 RENDELETE (2016. április 27.)
+
+>  2011. évi CXII. törvény – az információs önrendelkezési jogról és az információszabadságról (a továbbiakban: Infotv.)
+    
+>  2001. évi CVIII. törvény – az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről (főképp a 13/A. §-a)
+
+
+| Modul| ID | Név | Verzió | Kifejtés | 
+| --- | ---: | --- | --- | --- |
+| Funkció| K1 | Férőhelyek-lekérdezése |1.0| A vendég lekérdezi a férőhelyek adatait a megadott időre vonatkozóan. |
+| Funkció| K2| Foglalás |1.0| Amikor a fogaláls megtörtént, akkor az adott helyekre a foglalás saját azonosítót kap.|
+| Funkció| K3| Számla generálása |1.0| A vendég foglaláskor számlát kap.| 
+| Modifikáció | K4| Módosítás |1.0| A foglalási idő és a számla módosul. |
+| Funkció| K5| Távozás |1.0| A mozi rendszer a film vetítése utána automatikusan törli a felhasználókat. |
+| Funkció| K6| Lemondás|1.0| A vendég bármikor lemondhatja a foglalást jelen időpontra vonatkozólag. |
 
 ## Funkcionális terv
 
