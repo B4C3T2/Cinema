@@ -1,6 +1,7 @@
 # Rendszerterv
 >Cinema
 >HyperTeam
+
 ## A rendszer célja
 A rendszer célja, hogy az eddigiekben használt offline rendszert modernizáljuk. Ezentúl a foglalás menete, a szabad, illetve a foglalt helyek követése, a számla összegének kiszámítása elektronikus módon fog történni. A rendszer kezelését részben a felhasználó oldja meg, a foglalásnál ő viheti majd fel az adatokat.
 A projekt netes böngészőből lesz indítható, így akármilyen platformon elérhető lesz, nem létfontosságú, hogy a személy egy irodai környezetben tartózkodjon. Akár egy tabletről is le tudjuk majd foglalni a megfelelő férőhelyet.
@@ -111,7 +112,28 @@ vagy
 
 **Képernyő tervek**
 >Képernyőtervek -még nincs meghatározva
+
 ## Fizikai környezet
+**Fizikai környezet**
+Itt határozzuk meg, hogy milyen platformon fogunk fejleszteni, milyen operációs rendszerre és hardverre. Gyakran fontos tudnunk a hálózat felépítését is, például, hogy van-e tűzfal, az milyen portokat engedélyez. Ha vannak megvásárolt komponenseink, azokat is itt kell megadnunk.
+A backend fejlesztése Java, a frontend fejlesztése PHP segítségével zajlik.
+Az alkalmazás webplatformra készül.
+Nincsenek megvásárolt komponenseink.
+
+**Fejlesztői eszközök**
+ - Linux, bash, screen, curl 
+ - Java, Maven, ItelliJ IDEA
+ - Node, npm, WebStorm
+ - Docker, docker-compose, Dockstation
+ - Postman
+ - git (Github account)
+ - React
+ - PHP
+ - MySQL
+ **Keretrendszer**
+ - Spring framework
+ 
+A weboldal használatához egy egyszerű böngészőre van szükség, így akármilyen platformon elérhető, nem létfontosságú, hogy a személy egy irodai környezetben legyen. Akár egy tabletről is le tudjuk foglalni a megfelelő férőhelyeket.
 
 ## Architekturális terv
 
