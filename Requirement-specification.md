@@ -81,3 +81,14 @@ A foglalást szándékozó vendégek számára a legkézenfekvőbb megoldás az 
 > Minden vendég lefoglalhatja a számára legjobb parcellát.
 > A rendszernek számon kell tartania az adott időközben foglalt parcellákat, ezekre ne engedjen több foglalást amíg az adott foglalás ideje le nem jár.
 > A számlát a vendég a foglalás végrehajtása után fogja megkapni.
+
+##8. Követelmény lista
+
+| modul| id | név | verzió | kifejtés | 
+| --- | ---: | --- | --- | --- |
+| funkció| K1 | Férőhelyek-lekérdezése |1.0| A vendég lekérdezi a férőhelyek adatait a megadott időre vonatkozóan. |
+| funkció| K2| Foglalás |1.0| Amikor a fogaláls megtörtént akkor az adott helyere, a foglalás saját azonosítót kap.|
+| funkció| K3| Számla generálása |1.0| A vendég foglaláskor számlát kap.| 
+| modifikáció | K4| Módosítás |1.0| A foglalási idő és a számla módosul. |
+| funkció| K5| Távozás |1.0| A mozi rendszer a film vetítése utána automatikusan törtli a felhaszmálókat. |
+| funkció| K6| Lemondás|1.0| A vendég bármikor lemondhatja a foglalást jelen időpontra vonatkozólag. |
