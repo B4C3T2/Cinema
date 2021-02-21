@@ -67,3 +67,17 @@ AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) 
 >  2011. évi CXII. törvény – az információs önrendelkezési jogról és az információszabadságról (a továbbiakban: Infotv.)
     
 >  2001. évi CVIII. törvény – az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről (főképp a 13/A. §-a)
+
+## 6. Jelenlegi üzleti folyamatok modellje 
+
+Mai világban már létezik egy technika az adatok dinamikus kezelésére, ennek ellenére számos filmszínház még a régi módszereket alkalmazza. A régi megszokott megoldás papír alapú foglalásokat jelent. A recepciós emiatt lassabban és nehezebben látja át a foglalt illetve a szabad parcellákat, illetve a különböző vendégekhez tartozó adatokat. A papír alapú könyvelés növeli a hibázás kockázatát, emellett nehezebben javítható. Ez a megoldás a XXI. században elavultnak számít, ráadásul nem igazán környezetbarát módszernek minősül. 
+
+## 7. Igényelt üzleti folyamatok
+
+A foglalást szándékozó vendégek számára a legkézenfekvőbb megoldás az lenne, hogy az adataikat illetve a foglalásukat digitális formában tehessék meg, továbbá elektronikus számla kiállítására is legyen mód. A jelenleg használt kézi megoldásokhoz képest sokkal előnyösebb a digitális rendszer, hiszen itt a hiba kockázata kisebb.
+   
+> A cél, hogy adott időközre megkapjuk mely helyek szabadok, illetve foglaltak.
+> A vendégek választhatnak, hogy egy vagy több férőhelyet szeretnének foglalni (max 4 lehetséges), ennek megfelelően jelzi a rendszer a számára megfelelő helyeket, illetve e szerint állapítja meg az árat.
+> Minden vendég lefoglalhatja a számára legjobb parcellát.
+> A rendszernek számon kell tartania az adott időközben foglalt parcellákat, ezekre ne engedjen több foglalást amíg az adott foglalás ideje le nem jár.
+> A számlát a vendég a foglalás végrehajtása után fogja megkapni.
