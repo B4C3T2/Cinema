@@ -47,3 +47,19 @@ A vendég a következőket tudja kezelni a rendszeren belül :
 ## 7. Megfeleltetés , hogyan fedik le a használati esetek a követelményeket
  Ez egy teljes adminisztrációs felület. A vendég nincsen közvetlen kapcsolatban a jegyeladó ügyfelekkel, de közvetett módon igen, hiszen a foglalást mind két fél látni fogja, a rendszeren keresztül. A weboldal megnyitásakor megnyílik a főoldalunk, ahol található a Lekérdezés, amellyel letudjuk kérdezni mely férőhelyek szabadak illetve foglaltak adott intervallumon. Ez alatt található a foglalás. A weboldal középső részén találjuk a férőhelyeket amelyeket a lekérdezésben megadott intervallumon lefoglalt időpontban megjeleníti a foglalt ülőhelyeket helyeket pirossal, a szabad helyeket zölddel. Ezt a felületet a vendég a saját készülékén tekintheti meg. A jobb oldalon pedig letudjuk foglalni, férőhely száma alapján a mezők kitöltésével.
  
+ ## 8. Képernyő tervek
+A képernyő tervek a ScreenPlan mappában érhetőek majd el.
+
+## 9. Forgatókönyv
+ - Webes felület
+ >Ülőhelyek lekérdezése:
+ >>Itt tudjuk lekérdezni a férőhelyeket a megadott intervallumon belül. Ezt a webes felületen látjuk.
+ >
+ >Foglalás létrehozása:
+ >> Itt kell a saját adatokat megadni: a nevet, az email címet, a lakcímet és a telefon számot majd a  Létrehoz gombra kattintva máris létre is lefogaltuk a számunkra megfelelő helyet.
+>
+>Moziterem:
+>>Itt találjuk az ülőhelyek lekérdezésénél megadott intervallumon belüli helyeket. Amelyeket két szín jelzi, a piros a foglaltat jelzi, a zöld a szabadot, az az le lehet foglalni.
+>
+>Foglalás:
+>>Itt tudjuk lefoglalni férőhely szám alapján. Kiválasztjuk, hogy melyik filmre szeretnék foglalni, és hány órától. Meg kell adnunk, hogy hány főre szeretnénk lefoglani a helyeket. Ha végeztünk az adatok feltöltésével akkor a Foglal gombra kattintunk, amely lefoglalja az adott helyet ha létezik ilyen email cím az adatbázisban.
