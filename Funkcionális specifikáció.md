@@ -47,8 +47,9 @@ A vendég a következőket tudja kezelni a rendszeren belül :
 ## 7. Megfeleltetés , hogyan fedik le a használati esetek a követelményeket
  Ez egy teljes adminisztrációs felület. A vendég nincsen közvetlen kapcsolatban a jegyeladó ügyfelekkel, de közvetett módon igen, hiszen a foglalást mind két fél látni fogja, a rendszeren keresztül. A weboldal megnyitásakor megnyílik a főoldalunk, ahol található a Lekérdezés, amellyel letudjuk kérdezni mely férőhelyek szabadak illetve foglaltak adott intervallumon. Ez alatt található a foglalás. A weboldal középső részén találjuk a férőhelyeket amelyeket a lekérdezésben megadott intervallumon lefoglalt időpontban megjeleníti a foglalt ülőhelyeket helyeket pirossal, a szabad helyeket zölddel. Ezt a felületet a vendég a saját készülékén tekintheti meg. A jobb oldalon pedig letudjuk foglalni, férőhely száma alapján a mezők kitöltésével.
  
- ## 8. Képernyő tervek
+## 8. Képernyő tervek
 A képernyő tervek a ScreenPlan mappában érhetőek majd el.
+![Bejelentkezesi_felulet](https://media.discordapp.net/attachments/806192892586360873/816324838024151090/Login_page_plan.png?width=800&height=451)
 
 ## 9. Forgatókönyv
  - Webes felület
