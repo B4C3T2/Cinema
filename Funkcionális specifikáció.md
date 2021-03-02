@@ -53,6 +53,8 @@ Regisztráció:
 https://media.discordapp.net/attachments/806192892586360873/816324840872476762/registration.png
 Bejelentkezés:
 https://media.discordapp.net/attachments/806192892586360873/816324838024151090/Login_page_plan.png?width=800&height=451
+Főoldal:
+https://media.discordapp.net/attachments/806192892586360873/816334619641118761/Fooldal.png?width=685&height=451
 
 ## 9. Forgatókönyv
  - Webes felület
