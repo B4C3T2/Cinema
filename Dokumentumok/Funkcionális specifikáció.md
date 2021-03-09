@@ -56,7 +56,7 @@ Bejelentkezés:
 Főoldal:
 ![Főoldal felülete](https://media.discordapp.net/attachments/806192892586360873/816334619641118761/Fooldal.png?width=685&height=451)
 Foglalás:
-https://media.discordapp.net/attachments/806192892586360873/816334616276762714/Foglalasi_oldal.png?width=685&height=451
+![Foglalási felület](https://media.discordapp.net/attachments/806192892586360873/816334616276762714/Foglalasi_oldal.png?width=685&height=451)
 ## 9. Forgatókönyv
  - Webes felület
  >Ülőhelyek lekérdezése:
