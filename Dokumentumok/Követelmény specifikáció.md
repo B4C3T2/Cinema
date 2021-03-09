@@ -86,9 +86,9 @@ A foglalást szándékozó felhasználók számára a legkézenfekvőbb megoldá
 
 | modul| id | név | verzió | kifejtés | 
 | --- | ---: | --- | --- | --- |
-| funkció| K1 | Férőhelyek-lekérdezése |1.0| A vendég lekérdezi a férőhelyek adatait a megadott időre vonatkozóan. |
-| funkció| K2| Foglalás |1.0| Amikor a fogaláls megtörtént akkor az adott helyere, a foglalás saját azonosítót kap.|
+| funkció| K1 | Férőhelyek-lekérdezése |1.0| A felhasználó lekérdezi az ülőhelyek adatait a megadott időre vonatkozóan. |
+| funkció| K2| Foglalás |1.0| Amikor a fogaláls megtörtént akkor az adott ülőhelyere, a foglalás saját azonosítót kap.|
 | funkció| K3| Számla generálása |1.0| A vendég foglaláskor számlát kap.| 
 | modifikáció | K4| Módosítás |1.0| A foglalási idő és a számla módosul. |
-| funkció| K5| Távozás |1.0| A mozi rendszer a film vetítése utána automatikusan törtli a felhaszmálókat. |
-| funkció| K6| Lemondás|1.0| A vendég bármikor lemondhatja a foglalást jelen időpontra vonatkozólag. |
+| funkció| K5| Távozás |1.0| A mozi rendszer a film vetítése utána automatikusan törtli a felhasználó foglalását. |
+| funkció| K6| Lemondás|1.0| A vendég bármikor lemondhatja a foglalást a vetítés előttig. |
