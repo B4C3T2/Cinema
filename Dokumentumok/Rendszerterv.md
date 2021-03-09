@@ -223,7 +223,11 @@ A webes alkalmazás telepítés nélkül futtatható, bármely webböngészőn k
 
 Az alkalmazás használatához internetelérésen és a böngészőn kívül nincs szükség más külső szoftverre.
 
-Az alkalmazás használatához regisztrációra van szükség, ez az adat tárolódik későbbi felhasználás esetére. Regisztráció után be kell jelentkezni, csak ezután lesz elérhető a foglalási felület.
+Az alkalmazás használatához regisztrációra van szükség, ez az adat tárolódik későbbi felhasználás esetére.
+
+Az alkalmazás regisztráció nélkül is használható a filmek böngészésére.
+
+Regisztráció után be kell jelentkezni, csak ezután lesz elérhető a foglalási felület.
 
 
 ## Karbantartási terv
