@@ -184,3 +184,13 @@ A weboldal használatához egy egyszerű böngészőre van szükség, így akár
 
 
 ## Tesztterv
+
+
+## Telepítési terv
+
+
+A webes alkalmazás telepítés nélkül futtatható, bármely webböngészőn keresztül, belső hálózaton.
+
+Az alkalmazás használatához internetelérésen és a böngészőn kívül nincs szükség más külső szoftverre.
+
+Az alkalmazás használatához regisztrációra van szükség, ez az adat tárolódik későbbi felhasználás esetére. Regisztráció után be kell jelentkezni, csak ezután lesz elérhető a foglalási felület.
