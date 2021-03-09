@@ -49,8 +49,8 @@ A felhasználónak szüksége van egy olyan eszközre, amin weboldalak megjelen�
 **4.1 A felhasználó lehetőségei:**
 
 - Lekérdezheti a szabad helyeket egy adott időpontban a vetítésre.
-- Megtadhatja az adatait a rendszerbe a foglaláshoz.
-- Le tudja foglalni a megfelelő helyet bejelentkezés után.
+- Megtadhatja az adatait a rendszerbe a regisztrációhoz.
+- Le tudja foglalni a megfelelő helye(ke)t bejelentkezés után.
 - Megszüntetheti illetve módosíthatja a foglalást.
 
 ## 5. Rendszerre vonatkozó törvények, rendeletek, szabályok és szabványok
@@ -70,7 +70,7 @@ AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) 
 
 ## 6. Jelenlegi üzleti folyamatok modellje 
 
-Mai világban már létezik egy technika az adatok dinamikus kezelésére, ennek ellenére számos filmszínház még a régi módszereket alkalmazza. A régi megszokott megoldás papír alapú foglalásokat jelent. A recepciós emiatt lassabban és nehezebben látja át a foglalt illetve a szabad parcellákat, illetve a különböző vendégekhez tartozó adatokat. A papír alapú könyvelés növeli a hibázás kockázatát, emellett nehezebben javítható. Ez a megoldás a XXI. században elavultnak számít, ráadásul nem igazán környezetbarát módszernek minősül. 
+Mai világban már létezik egy technika az adatok dinamikus kezelésére, ennek ellenére számos filmszínház még a régi módszereket alkalmazza. A régi megszokott megoldás papír alapú foglalásokat jelent. A felhasználó emiatt lassabban és nehezebben látja át a foglalt illetve a szabad ülőhelyeket, illetve a különböző vendégekhez tartozó adatokat. A papír alapú könyvelés növeli a hibázás kockázatát, emellett nehezebben javítható. Ez a megoldás a XXI. században elavultnak számít, ráadásul nem igazán környezetbarát módszernek minősül. 
 
 ## 7. Igényelt üzleti folyamatok
 
