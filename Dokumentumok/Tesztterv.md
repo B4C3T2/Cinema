@@ -131,3 +131,123 @@ A tesztelési feladat a következő teszt-eseteket foglalja magába:
 ## 3.7 Teszt forgatókönyv
 A teszt elvégzésének meghatározott sorrendjét és függőségeit teszt forgatókönyvben kell rögzíteni. A teszt forgatókönyv elkészítése során ügyelni kell a párhuzamosan elvégezhető tevékenységek lehetőség szerinti kihasználásra, az tesztelési idő csökkentésének érdekében. 
 
+# 4 Tesztelési jegyzőkönyv és tesztelési jelentés
+
+## 4.1 Tesztelési jegyzőkönyv
+- A tesztelők a tesztforgatókönyvnek megfelelően elvégzik a tesztelést és az eredményt tesztjegyzőkönyvekben dokumentálják.
+- A teszt kimenetelét minden esetben jelenteni kell a tesztkoordinátornak.
+- A tesztkoordinátor a csapattal együtt megoldást keres a problémákra, ezután frissíti a tesztforgatókönyvet.
+- Ha a problémát megoldották, a tesztelő újrakezdheti a tesztelést, majd dokumentálja az eredményeket.
+- Ha a hiba továbbra is fennáll, és harmadik félen múlik a megoldása eszkalálni kell a problémát a projekt menedzsernek.
+
+## 4.2 Tesztelési jelentés
+A tesztelési jelentést a tesztkoordinátor készíti el. Ez egy részletes áttekintése a lefutott teszteknek, azok eredményeinek, státuszának és a megjegyzéseknek.
+A tesztkoordinátornak ezután el kell juttatnia a projektmenedzsernek a tesztelési jelentést. 
+
+## 4.3 Tesztelt elvárások
+
+Az alábbi funkcionális elvárások szerepelnek az üzleti, illetve fejlesztői specifikációban, amelyek tesztelésre is kerültek: 
+
+| **#** | **Leírás**|
+| --- | --- |
+| 1. |  |
+| 2. |  |
+| 3. |  |
+| 4. |  |
+| 5. |  |
+| 6. |  |
+
+Az alábbi nem-funkcionális elvárások szerepelnek az üzleti, illetve fejlesztői specifikációban, amelyek tesztelésre is kerültek: 
+
+| **#** | **Leírás**|
+| --- | --- |
+| 1. |  |
+| 2. |  |
+| 3. |  |
+| 4. |  |
+| 5. |  |
+| 6. |  |
+
+Az alábbi elvárások szerepelnek az üzleti, illetve fejlesztői specifikációban, amelyek nem kerültek tesztelésre: 
+
+| **#** | **Leírás**|
+| --- | --- |
+| 1. |  |
+| 2. |  |
+| 3. |  |
+
+## 4.4 Elfogadási kritériumok
+
+A teszt sikerességének kritériumai:
+
+-   Technikai, a teszt forgatókönyvben leírtak szerint.
+    
+-   A projekt menedzser jóváhagyása a teszt leszállítandókra.
+
+## 4.5 Kockázatkezelés
+
+| Kockázat | Hatás (magas/közepes/alacsony) | Kockázatkezelési mód |
+|---|---|---|
+| Csapattag megbetegedése  | közepes | Adott feladatok áthárulnak egy másik csapattagra |
+| Számítógép meghibásodása | magas  | Erőforrások megosztása a csapattagoknál |
+| Adatveszteség  | magas | Folyamatos biztonsági mentés, verziókövetés |
+| Kiosztott feladat elmulasztása | magas  | Szigorú határidők betartása, folyamatos törekvés hátráltató probléma esetén a mielőbbi megoldást megtalálására. |
+
+## 4.6 Tesztjegyzőkönyv minta
+
+| **Tesztelési jegyzőkönyv** | |
+|---|---|
+| A teszt-eset leírása és célja: | |
+| A tesztelt folyamat/funkció leírása: | |
+| A tesztelés előfeltételei: | | 
+| A tesztelés dátuma és időpontja: | |
+| A tesztadatok típusa: | |
+| A tesztet végző személy(ek): | |
+|  A tesztelt rendszer beállításai: | |
+| A teszt-eset elvárt eredménye: | |
+|  A tesztelés eredménye: | |
+|  Megjegyzések: |  |
+
+| **Tesztelést elvégezte** | |
+|--|--|
+| Név: | |
+| Szervezeti egység/ beosztás: | |
+| Aláírás: | |
+| Dátum: | |
+
+**Jóváhagyások:**
+
+| **Jóváhagyó** | |
+|--|--|
+| Név: | |
+| Szervezeti egység/ beosztás: | |
+| Aláírás: | |
+| Dátum: | |
+
+## 4.7 Tesztelési jelentés minta
+
+| **Tesztelési jelentés** | |
+|---|---|
+| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye: | |
+| A tesztelt folyamatok/funkciók/modulok leírása: | |
+| A tesztadatok típusa: | | 
+| A tesztelt rendszer beállításai: | |
+| A tesztelések eredménye: | ||
+|  Megjegyzések: |  |
+
+| **Tesztelést elvégezte** | |
+|--|--|
+| Név: | |
+| Szervezeti egység/ beosztás: | |
+| Aláírás: | |
+| Dátum: | |
+
+
+**Jóváhagyások:**
+
+| **Jóváhagyó** | |
+|--|--|
+| Név: | |
+| Szervezeti egység/ beosztás: | |
+| Aláírás: | |
+| Dátum: | |
