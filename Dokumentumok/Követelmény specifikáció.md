@@ -6,9 +6,9 @@ Ennek a dokumentumnak célja, hogy részletes leírást adjon a mozi jegyfoglal�
 
 **1.2 A projekt leírása**
 
-*Egy mozi számára foglalós rendszert készítünk.*
+*Egy mozi számára jegyfoglalós rendszert készítünk.*
 
-Az online jegyfoglaló-rendszer segítségével a jegyfoglalás menetét minden regisztrált felhasználó megteheti. A rendszer számontartja a szabad, illetve a foglalt férőhelyeket. Adatbázis rögzíti a vendégek és foglalások adatait. A foglalás lemondható illetve módosítható. A rendszer jelzi amikor a foglalás ideje lejárt. A helyek a film vetítése után felszabadulnak.
+Az online jegyfoglaló-rendszer segítségével a jegyfoglalás menetét minden regisztrált felhasználó megteheti. A rendszer számontartja a szabad, illetve a foglalt férőhelyeket, amik megtekinthetőek foglaláskor. Adatbázis rögzíti a vendégek és foglalások adatait. A foglalás lemondható illetve módosítható, de ezeket a műveleteket minden felhasználó csak a saját foglalására teheti meg. A rendszer jelzi amikor a foglalás ideje lejárt. A helyek a film vetítése után felszabadulnak.
 
 ## 2. Jelenlegi helyzet
 
@@ -24,7 +24,7 @@ Az online jegyfoglaló-rendszer segítségével a jegyfoglalás menetét minden 
 
 **3.1 Cél**
 
-Az eddigiekben használt offline rendszert szeretnénk modernizálni. Ezentúl a foglalás menete, a szabad- illetve foglalt helyek követése, a számla összegének kiszámítása elektronikus módon fog történni. A projekt netes böngészőből indítható lesz így akármilyen platformon elérhető, nem létfontosságú, hogy a személy egy irodai környezetben legyen. Akár egy tabletről is le tudjuk foglalni a megfelelő férőhelyet.
+Az eddigiekben használt offline rendszert szeretnénk modernizálni. Ezentúl a foglalás menete, a szabad- illetve foglalt helyek követése, a számla összegének kiszámítása elektronikus módon fog történni. A projekt netes böngészőből indítható lesz így akármilyen platformon elérhető, nem létfontosságú, hogy a felhasználó egy irodai környezetben legyen. Akár egy tabletről is le tudjuk foglalni a megfelelő férőhelyet.
 
 **3.2 Terjedelem**
 
@@ -32,11 +32,12 @@ A program a regisztált felhasználóknak készül. Az interaktív, vizuális fe
 
 **3.3 Foglalás menete**
 
-A szabad helyek lehérdezésére a főoldalon van lehetőség. A felhasználó bejelentkezés után tud választani a helyek közül(maximum 4-et), és le tudja foglalni őket. Ekkor a rendszer egy összeget számol, a jegyek árát. Sikeres foglalásm esetén azt az adatbázisban tároljuk.
+A szabad helyek lekérdezésére a foglalási oldalon van lehetőség. A felhasználó bejelentkezés után tud választani a helyek közül(maximum 4-et), és le tudja foglalni őket. Ekkor a rendszer egy összeget számol, a jegyek árát. Sikeres foglalásm esetén azt az adatbázisban tároljuk, és a felhasználó visszajelzést kap erről a főoldalon.
 
 **3.4 Továbbfejlesztési lehetőségek**
 
 A továbbiakban várható a mozi térbeli fejlődése. Több terem lehet, ahol egy időben külömböző filmek tekinthetőek meg.
+Ez alapján külömböző filmek borítóira kattintva a főoldalon, külömbőző lehet a foglalási oldal felépítése(más-más termekben eltérhet a székek száma/elrendezése).
 
 **3.5 A szükséges rendszer specifikáció**
 
@@ -49,8 +50,8 @@ A felhasználónak szüksége van egy olyan eszközre, amin weboldalak megjelen�
 **4.1 A felhasználó lehetőségei:**
 
 - Lekérdezheti a szabad helyeket egy adott időpontban a vetítésre.
-- Megtadhatja az adatait a rendszerbe a foglaláshoz.
-- Le tudja foglalni a megfelelő helyet bejelentkezés után.
+- Megtadhatja az adatait a rendszerbe a regisztrációhoz.
+- Le tudja foglalni a megfelelő helye(ke)t bejelentkezés után.
 - Megszüntetheti illetve módosíthatja a foglalást.
 
 ## 5. Rendszerre vonatkozó törvények, rendeletek, szabályok és szabványok
@@ -70,25 +71,25 @@ AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) 
 
 ## 6. Jelenlegi üzleti folyamatok modellje 
 
-Mai világban már létezik egy technika az adatok dinamikus kezelésére, ennek ellenére számos filmszínház még a régi módszereket alkalmazza. A régi megszokott megoldás papír alapú foglalásokat jelent. A recepciós emiatt lassabban és nehezebben látja át a foglalt illetve a szabad parcellákat, illetve a különböző vendégekhez tartozó adatokat. A papír alapú könyvelés növeli a hibázás kockázatát, emellett nehezebben javítható. Ez a megoldás a XXI. században elavultnak számít, ráadásul nem igazán környezetbarát módszernek minősül. 
+Mai világban már létezik egy technika az adatok dinamikus kezelésére, ennek ellenére számos filmszínház még a régi módszereket alkalmazza. A régi megszokott megoldás papír alapú foglalásokat jelent. A felhasználó emiatt lassabban és nehezebben látja át a foglalt illetve a szabad ülőhelyeket, illetve a különböző vendégekhez tartozó adatokat. A papír alapú könyvelés növeli a hibázás kockázatát, emellett nehezebben javítható. Ez a megoldás a XXI. században elavultnak számít, ráadásul nem igazán környezetbarát módszernek minősül. 
 
 ## 7. Igényelt üzleti folyamatok
 
-A foglalást szándékozó vendégek számára a legkézenfekvőbb megoldás az lenne, hogy az adataikat illetve a foglalásukat digitális formában tehessék meg, továbbá elektronikus számla kiállítására is legyen mód. A jelenleg használt kézi megoldásokhoz képest sokkal előnyösebb a digitális rendszer, hiszen itt a hiba kockázata kisebb.
+A foglalást szándékozó felhasználók számára a legkézenfekvőbb megoldás az lenne, hogy az adataikat illetve a foglalásukat digitális formában tehessék meg, továbbá elektronikus számla kiállítására is legyen mód. A jelenleg használt kézi megoldásokhoz képest sokkal előnyösebb a digitális rendszer, hiszen itt a hiba kockázata kisebb.
    
 > A cél, hogy adott időközre megkapjuk mely helyek szabadok, illetve foglaltak.
-> A vendégek választhatnak, hogy egy vagy több férőhelyet szeretnének foglalni (max 4 lehetséges), ennek megfelelően jelzi a rendszer a számára megfelelő helyeket, illetve e szerint állapítja meg az árat.
-> Minden vendég lefoglalhatja a számára legjobb parcellát.
-> A rendszernek számon kell tartania az adott időközben foglalt parcellákat, ezekre ne engedjen több foglalást amíg az adott foglalás ideje le nem jár.
+> A felhasználók választhatnak, hogy egy vagy több férőhelyet szeretnének foglalni (max 4 lehetséges), ennek megfelelően jelzi a rendszer a számára megfelelő helyeket, illetve e szerint állapítja meg az árat.
+> Minden vendég lefoglalhatja a számára legjobb ülőhelyet.
+> A rendszernek számon kell tartania az adott időközben foglalt ülőhelyeket, ezekre ne engedjen több foglalást amíg az adott foglalás ideje le nem jár.
 > A számlát a vendég a foglalás végrehajtása után fogja megkapni.
 
 ##8. Követelmény lista
 
 | modul| id | név | verzió | kifejtés | 
 | --- | ---: | --- | --- | --- |
-| funkció| K1 | Férőhelyek-lekérdezése |1.0| A vendég lekérdezi a férőhelyek adatait a megadott időre vonatkozóan. |
-| funkció| K2| Foglalás |1.0| Amikor a fogaláls megtörtént akkor az adott helyere, a foglalás saját azonosítót kap.|
+| funkció| K1 | Férőhelyek-lekérdezése |1.0| A felhasználó lekérdezi az ülőhelyek adatait a megadott időre vonatkozóan. |
+| funkció| K2| Foglalás |1.0| Amikor a fogaláls megtörtént akkor az adott ülőhelyere, a foglalás saját azonosítót kap.|
 | funkció| K3| Számla generálása |1.0| A vendég foglaláskor számlát kap.| 
 | modifikáció | K4| Módosítás |1.0| A foglalási idő és a számla módosul. |
-| funkció| K5| Távozás |1.0| A mozi rendszer a film vetítése utána automatikusan törtli a felhaszmálókat. |
-| funkció| K6| Lemondás|1.0| A vendég bármikor lemondhatja a foglalást jelen időpontra vonatkozólag. |
+| funkció| K5| Távozás |1.0| A mozi rendszer a film vetítése utána automatikusan törtli a felhasználó foglalását. |
+| funkció| K6| Lemondás|1.0| A vendég bármikor lemondhatja a foglalást a vetítés előttig. |
