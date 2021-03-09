@@ -6,9 +6,9 @@ Ennek a dokumentumnak célja, hogy részletes leírást adjon a mozi jegyfoglal�
 
 **1.2 A projekt leírása**
 
-*Egy mozi számára foglalós rendszert készítünk.*
+*Egy mozi számára jegyfoglalós rendszert készítünk.*
 
-Az online jegyfoglaló-rendszer segítségével a jegyfoglalás menetét minden regisztrált felhasználó megteheti. A rendszer számontartja a szabad, illetve a foglalt férőhelyeket. Adatbázis rögzíti a vendégek és foglalások adatait. A foglalás lemondható illetve módosítható. A rendszer jelzi amikor a foglalás ideje lejárt. A helyek a film vetítése után felszabadulnak.
+Az online jegyfoglaló-rendszer segítségével a jegyfoglalás menetét minden regisztrált felhasználó megteheti. A rendszer számontartja a szabad, illetve a foglalt férőhelyeket, amik megtekinthetőek foglaláskor. Adatbázis rögzíti a vendégek és foglalások adatait. A foglalás lemondható illetve módosítható, de ezeket a műveleteket minden felhasználó csak a saját foglalására teheti meg. A rendszer jelzi amikor a foglalás ideje lejárt. A helyek a film vetítése után felszabadulnak.
 
 ## 2. Jelenlegi helyzet
 
