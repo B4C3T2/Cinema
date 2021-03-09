@@ -194,3 +194,19 @@ A webes alkalmazás telepítés nélkül futtatható, bármely webböngészőn k
 Az alkalmazás használatához internetelérésen és a böngészőn kívül nincs szükség más külső szoftverre.
 
 Az alkalmazás használatához regisztrációra van szükség, ez az adat tárolódik későbbi felhasználás esetére. Regisztráció után be kell jelentkezni, csak ezután lesz elérhető a foglalási felület.
+
+## Karbantartási terv
+
+
+A webes alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
+
+- Ellenőrizni kell, hogy a jövőben kiadott böngésző frissítésekkel működőképes marad-e.
+A webalkalmazás karbantartása során alkalmazkodni kell az újabb böngésző kiadásokhoz, hibás megjelenés / működést javítani kell.
+* Tesztelés frissebb verzió használatával. Hiba észlelése esetén azok javítása.
+
+- A szerver folyamatos karbantartása és megfelelő kezelése.
+A felhasználóbázis növekedésével ügyelni kell arra, hogy mind az adatbázis, mind a webszerver képes legyen a felhasználók gyors kiszolgálására, és az általuk felvitt adatok tárolására.
+
+Az alkalmazás bővítési lehetőségét fenntartjuk.
+
+Igény esetén új funkciók hozzáadása.
