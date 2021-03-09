@@ -74,12 +74,12 @@ Mai világban már létezik egy technika az adatok dinamikus kezelésére, ennek
 
 ## 7. Igényelt üzleti folyamatok
 
-A foglalást szándékozó vendégek számára a legkézenfekvőbb megoldás az lenne, hogy az adataikat illetve a foglalásukat digitális formában tehessék meg, továbbá elektronikus számla kiállítására is legyen mód. A jelenleg használt kézi megoldásokhoz képest sokkal előnyösebb a digitális rendszer, hiszen itt a hiba kockázata kisebb.
+A foglalást szándékozó felhasználók számára a legkézenfekvőbb megoldás az lenne, hogy az adataikat illetve a foglalásukat digitális formában tehessék meg, továbbá elektronikus számla kiállítására is legyen mód. A jelenleg használt kézi megoldásokhoz képest sokkal előnyösebb a digitális rendszer, hiszen itt a hiba kockázata kisebb.
    
 > A cél, hogy adott időközre megkapjuk mely helyek szabadok, illetve foglaltak.
-> A vendégek választhatnak, hogy egy vagy több férőhelyet szeretnének foglalni (max 4 lehetséges), ennek megfelelően jelzi a rendszer a számára megfelelő helyeket, illetve e szerint állapítja meg az árat.
-> Minden vendég lefoglalhatja a számára legjobb parcellát.
-> A rendszernek számon kell tartania az adott időközben foglalt parcellákat, ezekre ne engedjen több foglalást amíg az adott foglalás ideje le nem jár.
+> A felhasználók választhatnak, hogy egy vagy több férőhelyet szeretnének foglalni (max 4 lehetséges), ennek megfelelően jelzi a rendszer a számára megfelelő helyeket, illetve e szerint állapítja meg az árat.
+> Minden vendég lefoglalhatja a számára legjobb ülőhelyet.
+> A rendszernek számon kell tartania az adott időközben foglalt ülőhelyeket, ezekre ne engedjen több foglalást amíg az adott foglalás ideje le nem jár.
 > A számlát a vendég a foglalás végrehajtása után fogja megkapni.
 
 ##8. Követelmény lista
