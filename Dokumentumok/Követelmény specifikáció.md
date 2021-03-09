@@ -37,6 +37,7 @@ A szabad helyek lekérdezésére a foglalási oldalon van lehetőség. A felhasz
 **3.4 Továbbfejlesztési lehetőségek**
 
 A továbbiakban várható a mozi térbeli fejlődése. Több terem lehet, ahol egy időben külömböző filmek tekinthetőek meg.
+Ez alapján külömböző filmek borítóira kattintva a főoldalon, külömbőző lehet a foglalási oldal felépítése(más-más termekben eltérhet a székek száma/elrendezése).
 
 **3.5 A szükséges rendszer specifikáció**
 
