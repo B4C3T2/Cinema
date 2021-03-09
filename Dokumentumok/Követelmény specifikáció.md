@@ -24,7 +24,7 @@ Az online jegyfoglaló-rendszer segítségével a jegyfoglalás menetét minden 
 
 **3.1 Cél**
 
-Az eddigiekben használt offline rendszert szeretnénk modernizálni. Ezentúl a foglalás menete, a szabad- illetve foglalt helyek követése, a számla összegének kiszámítása elektronikus módon fog történni. A projekt netes böngészőből indítható lesz így akármilyen platformon elérhető, nem létfontosságú, hogy a személy egy irodai környezetben legyen. Akár egy tabletről is le tudjuk foglalni a megfelelő férőhelyet.
+Az eddigiekben használt offline rendszert szeretnénk modernizálni. Ezentúl a foglalás menete, a szabad- illetve foglalt helyek követése, a számla összegének kiszámítása elektronikus módon fog történni. A projekt netes böngészőből indítható lesz így akármilyen platformon elérhető, nem létfontosságú, hogy a felhasználó egy irodai környezetben legyen. Akár egy tabletről is le tudjuk foglalni a megfelelő férőhelyet.
 
 **3.2 Terjedelem**
 
@@ -32,7 +32,7 @@ A program a regisztált felhasználóknak készül. Az interaktív, vizuális fe
 
 **3.3 Foglalás menete**
 
-A szabad helyek lehérdezésére a főoldalon van lehetőség. A felhasználó bejelentkezés után tud választani a helyek közül(maximum 4-et), és le tudja foglalni őket. Ekkor a rendszer egy összeget számol, a jegyek árát. Sikeres foglalásm esetén azt az adatbázisban tároljuk.
+A szabad helyek lekérdezésére a foglalási oldalon van lehetőség. A felhasználó bejelentkezés után tud választani a helyek közül(maximum 4-et), és le tudja foglalni őket. Ekkor a rendszer egy összeget számol, a jegyek árát. Sikeres foglalásm esetén azt az adatbázisban tároljuk, és a felhasználó visszajelzést kap erről a főoldalon.
 
 **3.4 Továbbfejlesztési lehetőségek**
 
