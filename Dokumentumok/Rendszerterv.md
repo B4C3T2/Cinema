@@ -206,6 +206,16 @@ A weboldal használatához egy egyszerű böngészőre van szükség, így akár
 
 ## Tesztterv
 
+A tesztterv célja az alkalmazás és komponenseinek teljes vizsgálata. Backend oldalán az erőforrások hozzáférésének szabályozása, frontenden a megfelelően működő felhasználói interfész.
+
+**Alfa teszt:**
+
+Célja a lefejlesztett funkciók tesztelése, mielőtt azok a felhasználók által végzett béta tesztelésre kerülnek. Időtartama egy hét.
+
+**Béta teszt:**
+
+Célfelhasználók által végzett tesztelés, időtartama egy hét. Tesztelés során a felhasználó a tapasztalt hibákról visszajelzést küld a fejlesztőknek képernyőképekkel és pontos leírással a hiba reprodukáláshoz, hogy azok a lehető leghatékonyabban javításra kerülhessenek.
+
 
 ## Telepítési terv
 
