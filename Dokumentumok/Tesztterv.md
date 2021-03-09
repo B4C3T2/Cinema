@@ -1,7 +1,7 @@
 
 # HyperTeam - Hyper Cinema tesztelési terv
 
-**A dokumentum célja**
+**A tesztterv célja**
 
 A tesztterv fontos dokumentum, amely leírja, hogy mit, milyen céllal, hogyan kell tesztelni.
 Lefekteti a tesztelés elveit, folyamatát és kontrollját. Meghatározza a fő
@@ -31,11 +31,24 @@ A teszt célja:
 
 # 1. Bevezetés
 
-A fejlesztő csapat célja, hogy a produktum kikerülése előtt lehető legnagyobb mértékű tesztelésen essen át a szoftver. Ezzel egy megbízható szoftvert adhatunk át a megrendelőnek rengeteg problémát megelőzve, és a hibajavítások elvégzése után.
+A fejlesztő csapat célja, hogy a produktum kikerülése előtt a lehető legnagyobb mértékű tesztelésen essen át a szoftver. Ezzel egy megbízható szoftvert adhatunk át a megrendelőnek rengeteg problémát megelőzve, és a hibajavítások elvégzése után.
 
-A tesztelés teljeskörű, igyekszünk minden tesztesetet megnézni mind UI, mind a szerveroldal részéről.
+A tesztelés teljeskörű, igyekszünk minden tesztesetet megnézni mind a UI, mind a szerveroldal részéről.
 
-A UI tesztelése során fontos, hogy a weboldal ugyanolyan könnyen kezelhető legyen akár telefonról, akár tabletről, mint egy asztali számítógépről vagy laptopról.
+A UI tesztelése során fontos, hogy a weboldal ugyanolyan könnyen kezelhető legyen telefonról vagy tabletről, mint egy asztali számítógépről vagy laptopról.
 
 A Backend tesztelése azért is tartozik a legfontosabb és legnehezebb feladatok közé, mert a lehető legtöbb hibát itt lehet elkövetni.
+
+## 1.1 Tesztelési terv célja
+
+A tesztelési terv célja a tesztelés teljes körűségének biztosítása, a tesztelés során alkalmazott eljárások és megoldások meghatározásával.
+
+ 
+## 1.2 Elvárások
+
+Az alábbi alap elvárások képezik ennek a teszttervnek az alapját:
+
+- Az olvasó ismeri az alapdokumentumokat, amelyek meghatározzák a rendszert.
+- A Hyper Team felelős a tesztadatok előállításáért.
+- A tesztprogram az ebben a dokumentumban meghatározott tesztterv alapján fut.
 
