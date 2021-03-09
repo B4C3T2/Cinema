@@ -52,6 +52,14 @@ A cél, hogy adott időközre megkapjuk, hogy mely ülések szabadok, illetve fo
 **Funkcionális**
 - Webes környezetben futattható legyen.
 - Felhasználók adatainak tárolása, listázása.
+
+**A felhasználó lehetőségei:**
+
+- Lekérdezheti a szabad helyeket egy adott időpontban a vetítésre.
+- Megtadhatja az adatait a rendszerbe a regisztrációhoz.
+- Le tudja foglalni a megfelelő helye(ke)t bejelentkezés után.
+- Megszüntetheti illetve módosíthatja a foglalást.
+
     
 **Nemfunkcionális**
 - Gyors listázás.
