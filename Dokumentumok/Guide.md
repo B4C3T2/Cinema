@@ -7,3 +7,8 @@
 - Létrehoztuk a HyperTeam GitHub illetve Trello csoportját.
 - Megbeszéltük az elvárásokat, illetve, hogy mire is számítsunk nagyjából a félév során.
 
+***Második hét(2021 02 16)***
+
+- Megállapítottuk milyen projektet fogunk elkészíteni.
+- Az ötlethez feladatba kiszabtuk a hozzá tartozó dokumentációkat, képernyő terveket.
+
