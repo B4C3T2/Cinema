@@ -25,3 +25,8 @@
 - Kiegészítettük a hiányzó funkciókat és terveket.
 - Összegeztük a jelenlegi helyzetet.
 
+***Ötödik hét(2021 03 09)***
+
+- A Főoldal, a Regisztrációs oldal, Bejelentkezési oldal, és a Foglalási oldal legyen elkészítve, nem feltétlenül kell hozzá adatbázis kapcsolat, viszont valami érdemlegeset kell felmutatni. Például: prototípus.
+- Az értékelés időpontjának egyeztetése.
+- A programhoz UML ábra elkészítése, hogyan származtatjuk az egyéb class-okat, az adatbázis kapcsolatot implementálni vele.
