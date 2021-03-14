@@ -15,5 +15,13 @@
 ***Harmadik hét(2021 02 23)***
 
 - A csapat Trello-jának kiegészítése, hibák kijavítása.
+- A Trello kártyák használatának összegzése, illetve kibővítése.
 - GitHub átalakítása, a címeket angolról magyarra történő átírása.
+
+***Negyedik hét(2021 03 02)***
+
+- Létrehoztunk kettő fő mappát, az egyiket a dokumentációnak, a másikat pedig majd az elkészülő kódnak.
+- A dokumentumok mappán belül a képernyőtervek számára is létrehoztunk még egy mappát, itt tároljuk az elkészült képernyőterveket.
+- Kiegészítettük a hiányzó funkciókat és terveket.
+- Összegeztük a jelenlegi helyzetet.
 
