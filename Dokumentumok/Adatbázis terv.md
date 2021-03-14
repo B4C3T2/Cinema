@@ -16,17 +16,19 @@
 
 - Egy férőhelynek van ID-je, ami a fix helyre utal.
 
-- A teremben a székek helye lehet szabad illetve foglalt.
+- A teremben a székek helye lehet szabad illetve foglalt. 
 
 *A helyek elhelyezkedése, azonosítója, foglaltsága a felhasználói felületen vizuálisan megjelenik.*
 
 ***Vendég:***
 
-- Egy vendégnek van neve, e-mail címe, jelszava
+- Egy vendégnek van neve, e-mail címe, jelszava. 
+
+- Ezek szükségesek a vendég számára ahhoz, hogy a regisztráció után be tudjon jelentkezni. A vendég számára szükséges adatok létfontosságúak a felhasználó számára. 
 
 ***Foglalás:***
 
-- Egy foglalásban található a hely száma, a film kezdetének illetve befejezésének időpontja. A vendég e-mail jelzi, a helyet melyik vendég foglalta le.
+- Egy foglalásban található a hely száma, a film kezdetének illetve befejezésének időpontja. A vendég e-mail címe jelzi, a helyet melyik vendég foglalta le.
 
 ***Foglalás lemondása/megszakítása:***
 
