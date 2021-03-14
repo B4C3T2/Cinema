@@ -12,3 +12,8 @@
 - Megállapítottuk milyen projektet fogunk elkészíteni.
 - Az ötlethez feladatba kiszabtuk a hozzá tartozó dokumentációkat, képernyő terveket.
 
+***Harmadik hét(2021 02 23)***
+
+- A csapat Trello-jának kiegészítése, hibák kijavítása.
+- GitHub átalakítása, a címeket angolról magyarra történő átírása.
+
