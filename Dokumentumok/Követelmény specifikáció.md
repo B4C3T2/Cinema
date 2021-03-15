@@ -18,7 +18,7 @@ Az online jegyfoglaló-rendszer segítségével a jegyfoglalás menetét minden 
 
  - Előre fogalás csak a mozi kasszájánál lehetséges
 
- - Sok vendég esetén nehéz az áttekinthetőség
+ - Sok felhasználó esetén nehéz az áttekinthetőség
 
 ## 3. Vízió
 
@@ -79,9 +79,9 @@ A foglalást szándékozó felhasználók számára a legkézenfekvőbb megoldá
    
 > A cél, hogy adott időközre megkapjuk mely helyek szabadok, illetve foglaltak.
 > A felhasználók választhatnak, hogy egy vagy több férőhelyet szeretnének foglalni (max 4 lehetséges), ennek megfelelően jelzi a rendszer a számára megfelelő helyeket, illetve e szerint állapítja meg az árat.
-> Minden vendég lefoglalhatja a számára legjobb ülőhelyet.
+> Minden felhasználó lefoglalhatja a számára legjobb ülőhelyet.
 > A rendszernek számon kell tartania az adott időközben foglalt ülőhelyeket, ezekre ne engedjen több foglalást amíg az adott foglalás ideje le nem jár.
-> A számlát a vendég a foglalás végrehajtása után fogja megkapni.
+> A számlát a felhasználó a foglalás végrehajtása után fogja megkapni.
 
 ##8. Követelmény lista
 
@@ -89,7 +89,7 @@ A foglalást szándékozó felhasználók számára a legkézenfekvőbb megoldá
 | --- | ---: | --- | --- | --- |
 | funkció| K1 | Férőhelyek-lekérdezése |1.0| A felhasználó lekérdezi az ülőhelyek adatait a megadott időre vonatkozóan. |
 | funkció| K2| Foglalás |1.0| Amikor a fogaláls megtörtént akkor az adott ülőhelyere, a foglalás saját azonosítót kap.|
-| funkció| K3| Számla generálása |1.0| A vendég foglaláskor számlát kap.| 
+| funkció| K3| Számla generálása |1.0| A felhasználó foglaláskor számlát kap.| 
 | modifikáció | K4| Módosítás |1.0| A foglalási idő és a számla módosul. |
 | funkció| K5| Távozás |1.0| A mozi rendszer a film vetítése utána automatikusan törtli a felhasználó foglalását. |
-| funkció| K6| Lemondás|1.0| A vendég bármikor lemondhatja a foglalást a vetítés előttig. |
+| funkció| K6| Lemondás|1.0| A felhasználó bármikor lemondhatja a foglalást a vetítés előttig. |
