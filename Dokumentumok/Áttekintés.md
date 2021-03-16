@@ -38,6 +38,8 @@
 
 - A Főoldal, a Regisztrációs oldal, Bejelentkezési oldal, és a Foglalási oldal legyen elkészítve, nem feltétlenül kell hozzá adatbázis kapcsolat, viszont valami érdemlegeset kell felmutatni. Például: prototípus.
 
+- A program HTML és CSS fájljainak elkészítése, és ezek külön rendezése.
+
 - Az értékelés időpontjának egyeztetése.
 
 - A programhoz UML ábra elkészítése, hogyan származtatjuk az egyéb class-okat, az adatbázis kapcsolatot implementálni vele.
