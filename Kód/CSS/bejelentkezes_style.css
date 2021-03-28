@@ -14,3 +14,10 @@ body {
   text-align: center;
   justify-content: center;
 }
+.login-wrapper {
+  height: 70vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
