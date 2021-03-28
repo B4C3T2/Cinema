@@ -19,3 +19,8 @@ img {
 	transition: 3000ms;
 		
 }
+content > table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 250px;
+}
