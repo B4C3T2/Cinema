@@ -49,3 +49,8 @@ a{
 	font-size: 25px;
 
 }
+.cover:hover{
+	transition: transform .5s ease;
+	transform: scale(1.25);
+    position:relative;
+}
