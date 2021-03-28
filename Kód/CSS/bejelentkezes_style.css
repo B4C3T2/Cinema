@@ -5,3 +5,9 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+.navbar {
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+}
