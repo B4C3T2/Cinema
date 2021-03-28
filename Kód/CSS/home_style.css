@@ -6,3 +6,8 @@ body {
 	background-position: center;
 	background-size: 100%;
 }
+img {
+	height: 400px;
+	width: 275px;
+	background-color: black;
+}
