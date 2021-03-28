@@ -42,3 +42,10 @@ content > table {
 	color:rgba(0,0,0,0);
 	background-color:rgba(255,255,255,0.2);
 }
+a{
+	color:white;
+	text-decoration: none;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	font-size: 25px;
+
+}
