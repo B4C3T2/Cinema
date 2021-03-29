@@ -10,5 +10,10 @@
 			//Database connection will be soon
 			return new array();
 		}
+		
+		function Booking($loggedInUser, $selectedSeats){
+			//Database connection will be soon(bookingId will be set by database connection)
+			return "Successful booking ".$this->bookingId;
+		}
 	}
 ?>
