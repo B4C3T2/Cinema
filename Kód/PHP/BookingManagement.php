@@ -20,5 +20,10 @@
 			$prize = count($selectedSeats) * 1500;
 			return $prize;
 		}
+		
+		function Modificate($loggedInUser, $bookingId, $selectedSeats){
+			//Database connection will be soon(loggedInUser and bookingId will be checked by database connection)
+			return true;
+		}
 	}
 ?>
