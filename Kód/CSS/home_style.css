@@ -32,11 +32,13 @@ content > table {
 	border-radius:0.12em;
 	box-sizing: border-box;
 	text-decoration:none;
-	font-family:'Roboto',sans-serif;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 	font-weight:300;
 	background-color:rgba(0,0,0,0);
 	text-align:center;
 	transition: all 0.2s;
+	font-size: 25px;
+	
 }
 .menu > button:hover {
 	color:rgba(0,0,0,0);
@@ -45,12 +47,39 @@ content > table {
 a{
 	color:white;
 	text-decoration: none;
-	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-	font-size: 25px;
-
 }
 .cover:hover{
 	transition: transform .5s ease;
 	transform: scale(1.25);
     position:relative;
+}
+.home > button{	
+	font-size: 150px; 
+	color: white;
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 700; 
+	line-height: 26.4px;
+	background-color:rgba(0,0,0,0);
+	margin-top:40px;
+	font-family: "Brush Script MT", cursive; 
+	outline: black; 
+	background: transparent;
+    border: none;
+	margin: 0;
+	position: relative;
+	top: 80px;
+	left: 69%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.home:hover{
+	transition: transform .5s ease;
+	transform: scale(1.1);
+}
+footer{
+	margin-top: 200px;
+    width: 100%;
+	color:white;
+	
 }
