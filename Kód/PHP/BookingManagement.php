@@ -15,5 +15,10 @@
 			//Database connection will be soon(bookingId will be set by database connection)
 			return "Successful booking ".$this->bookingId;
 		}
+		
+		function BillGenerate($selectedSeats){
+			$prize = count($selectedSeats) * 1500;
+			return $prize;
+		}
 	}
 ?>
