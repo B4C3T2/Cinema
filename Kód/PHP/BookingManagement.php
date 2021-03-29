@@ -25,5 +25,9 @@
 			//Database connection will be soon(loggedInUser and bookingId will be checked by database connection)
 			return true;
 		}
+		
+		function Leaving(){
+			//Booking table will be flushed in the database
+		}
 	}
 ?>
