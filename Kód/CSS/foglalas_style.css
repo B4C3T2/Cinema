@@ -6,3 +6,10 @@ body {
 	background-position: center;
 	background-size: 100%;
 }
+content > table{
+	
+	position: absolute;
+	bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
