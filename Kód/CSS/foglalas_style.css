@@ -13,3 +13,14 @@ content > table{
 	margin-left: auto;
 	margin-right: auto;
 }
+.seat > input{
+	margin-left: 42.5px;
+	margin-right: 42.5px;
+	margin-top: 35px;
+	color: rgba(255, 225, 0, 1);
+	/*border: none;
+	transition: 3000ms;*/
+	height: 100px;
+	width: 100px;
+	box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+}
