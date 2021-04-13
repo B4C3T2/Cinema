@@ -34,3 +34,9 @@ body {
 table, td {
 	padding: 10px;
 }
+footer{
+  position: absolute;
+  padding-bottom: 18px;
+  bottom: 0px;
+  color:white;
+}
