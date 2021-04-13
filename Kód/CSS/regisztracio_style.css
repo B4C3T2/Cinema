@@ -38,3 +38,13 @@ table, td {
   padding: 15px;
   padding-right: 40px;
 }
+
+a{
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover{
+  color: darkred;
+  text-decoration: none;
+}
