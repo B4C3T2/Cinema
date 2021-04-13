@@ -1,8 +1,10 @@
 body {
-
-	background-image: url("pictures/hatter.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: 100%;
+  padding-bottom: 20px;
+  background-image: url(pictures/back.png);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
 }
