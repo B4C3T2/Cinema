@@ -48,3 +48,10 @@ a:hover{
   color: darkred;
   text-decoration: none;
 }
+
+footer{
+  position: absolute;
+  padding-bottom: 18px;
+  bottom: 0px;
+  color:white;
+}
