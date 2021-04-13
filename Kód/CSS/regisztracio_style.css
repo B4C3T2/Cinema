@@ -1,8 +1,57 @@
 body {
+  padding-bottom: 20px;
+  background-image: url(pictures/back.png);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
 
-	background-image: url("pictures/hatter.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: 100%;
+.navbar {
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.login-wrapper {
+  height: 70vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  width: 500px;
+  max-width: 650px;
+  padding: 40px 40px 20px;
+  background: rgba(5,5,5,0.7);
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.9);
+}
+
+table, td {
+  padding: 15px;
+  padding-right: 40px;
+}
+
+a{
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover{
+  color: darkred;
+  text-decoration: none;
+}
+
+footer{
+  position: absolute;
+  padding-bottom: 18px;
+  bottom: 0px;
+  color:white;
 }
