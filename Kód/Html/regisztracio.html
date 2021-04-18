@@ -18,7 +18,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-        <span style="color:white;font-family:Brush Script MT;font-size: 50px;">Hyper Cinema&nbsp;&nbsp;&nbsp;</span>
+        <div class="logo">
+          <button type="button"  value="logo" style="text-align:center;">
+            <a href ="home.html">Hyper Cinema</a>
+          </button>
+        </div>
         <ul class="navbar-nav">
           <li class="nav-item">
               <a class="nav-link" href="home.html">Főoldal</a>
@@ -29,16 +33,14 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Regisztráció</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="foglalas.html">Foglalás</a>
-            </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container-fluid">
-    <header>Regisztráció</header>
+  <div>
+    <header>Regisztráció<hr></header>
+    <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz regisztrálnia kell,<br> vagy ha már tag, bejelentkezhet fiókjába a <a href="bejelentkezes.html" title="Kattintson ide a bejelentkezéshez!">bejelentkezés</a> segítségével.</h2>
     <nav>
       <div class="login-wrapper">
         <form action="" class="form">
@@ -68,16 +70,20 @@
               <td><input type="password" name="loginPasswordAgain" id="loginPasswordAgain" maxlength="250" required></td>
             </tr>
             <tr>
-              <td>
-              	<a href="home.html"><input type="button" value="Mégse" /></a>
+              <td class="form-gombok">
+              	<button type="button"  value="megse" class="btn btn-outline-secondary">
+                  <a href ="home.html">Mégse</a>
+                </button>
               </td>
-              <td>
-                <input type="submit" value="Regisztráció" class="submit-btn">
+              <td class="form-gombok">
+                <button type="submit"  value="regisztracio" class="btn btn-outline-secondary">
+                  <a href ="bejelentkezes.html">Regisztráció</a>
+                </button>
               </td>
             </tr>
             <tr>
               <td>
-                <a href="bejelentkezes.html">Már tag vagyok!</a>
+                <a href="bejelentkezes.html" title="Kattintson ide a bejelentkezéshez!">Már tag vagyok!</a>
               </td>
               <td>
               	
@@ -89,9 +95,9 @@
     </nav>
 
     <content></content>
-  <footer>
-    Copyright &copy; 2021 HyperTeam
-  </footer>
+    <footer>
+      Copyright &copy; 2021 HyperTeam
+    </footer>
   </div>
 </body>
 </html>
