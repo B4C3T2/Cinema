@@ -15,6 +15,57 @@ body {
   justify-content: center;
 }
 
+.navbar-nav{
+  font-size: 20px !important;
+  font-weight: lighter !important;
+}
+
+.logo > button{
+  font-size: 70px; 
+  color: white;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 600;
+  background-color:rgba(0,0,0,0);
+  font-family: "Brush Script MT", cursive; 
+  outline: black; 
+  background: transparent !important;
+  border: none;
+  margin: 0;
+  position: relative;
+  top: 50px;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.logo:hover{
+  transition: transform .5s ease;
+  transform: scale(1.1);
+}
+
+.form > button{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-weight:300;
+  background-color:rgba(0,0,0,0);
+  text-align:center;
+  transition: all 0.2s;
+  font-size: 25px;
+}
+
+.form-gombok > button:hover {
+  color:rgba(0,0,0,0) !important;
+  background-color:rgba(255,255,255,0.2) !important;
+}
+
+
 .login-wrapper {
   height: 70vh;
   width: 99vw;
@@ -39,19 +90,41 @@ table, td {
   padding-right: 40px;
 }
 
-a{
-  color: gray;
-  text-decoration: none;
-}
-
-a:hover{
-  color: darkred;
-  text-decoration: none;
-}
-
 footer{
   position: absolute;
   padding-bottom: 18px;
   bottom: 0px;
+  left: 9px;
   color:white;
+}
+
+a{
+  color: white;
+  text-decoration: none !important;
+}
+
+a:hover{
+color: white;
+}
+
+header{
+  font-size: 25px;
+  padding: 20px;
+}
+
+h2{
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 200;
+  color: #8c8c8c;
+}
+
+.container-fluid{
+  height: 80px;
+  background-color: hsl(202, 11%, 13%);
+}
+
+.nav-link:hover{
+  transition: transform .5s ease;
+  transform: scale(1.1);
 }
