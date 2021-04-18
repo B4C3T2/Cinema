@@ -31,17 +31,11 @@ body {
   color: #fff;
   box-shadow: 0 15px 25px rgba(0,0,0,0.9);
 }
+
 table, td {
-	padding: 10px;
+  padding: 10px;
 }
-a{
-  color: gray;
-  text-decoration: none;
-}
-a:hover{
-  color: darkred;
-  text-decoration: none;
-}
+
 footer{
   position: absolute;
   padding-bottom: 18px;
@@ -100,8 +94,33 @@ footer{
   background-color:rgba(255,255,255,0.2) !important;
 }
 
+a{
+  color: white;
+  text-decoration: none !important;
+}
+
+a:hover{
+color: white;
+}
+
 header{
   font-size: 25px;
   padding: 20px;
 }
-
+
+h2{
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 200;
+  color: #8c8c8c;
+}
+
+.container-fluid{
+  height: 80px;
+  background-color: hsl(202, 11%, 13%);
+}
+
+.nav-link:hover{
+  transition: transform .5s ease;
+  transform: scale(1.1);
+}
