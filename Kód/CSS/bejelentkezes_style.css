@@ -54,4 +54,25 @@ footer{
   font-size: 20px !important;
   font-weight: lighter !important;
 }
+
+.form > button{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-weight:300;
+  background-color:rgba(0,0,0,0);
+  text-align:center;
+  transition: all 0.2s;
+  font-size: 25px;
+}
+
+.bejelgomb > button:hover {
+  color:rgba(0,0,0,0) !important;
+  background-color:rgba(255,255,255,0.2) !important;
+}
 
