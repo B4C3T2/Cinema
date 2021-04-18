@@ -15,7 +15,7 @@ body {
   justify-content: center;
 }
 .login-wrapper {
-  height: 70vh;
+  height: 50vh;
   width: 99vw;
   display: flex;
   justify-content: center;
@@ -46,5 +46,12 @@ footer{
   position: absolute;
   padding-bottom: 18px;
   bottom: 0px;
+  left: 9px;
   color:white;
 }
+
+.navbar-nav{
+  font-size: 20px !important;
+  font-weight: lighter !important;
+}
+
