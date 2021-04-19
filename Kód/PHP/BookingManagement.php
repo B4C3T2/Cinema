@@ -1,6 +1,7 @@
 <?php
 	include("DatabaseManagement.php");
 	class BookigManagement{
+		//getting connection
 		$database = new DataBase();
 		$connection =  $database->getConnstring();
 		
@@ -11,8 +12,15 @@
 		public $bookingId;
 		
 		function Query(){
-			//Database connection will be soon
-			return new array();
+			global $connection;
+			//fetching data
+			$query="SELECT * FROM movie WHERE id='".$id."'";
+			$result=mysqli_query($connection, $query);
+			$response=array();
+			while($row=mysqli_fetch_array($result))
+			{
+				$response[]=$row;
+			}
 		}
 		
 		function Booking($loggedInUser, $selectedSeats){
