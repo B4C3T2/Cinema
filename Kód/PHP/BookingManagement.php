@@ -1,4 +1,5 @@
 <?php
+	include("DatabaseManagement.php");
 	class BookigManagement{
 		public $firstName;
 		public $lastName;
