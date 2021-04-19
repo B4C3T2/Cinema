@@ -17,10 +17,14 @@ Class DataBase{
       }
       return $this->conn;
     }
+    
     function checkBooking($bookingId) {
       $con = $query="SELECT id FROM bookingTable WHERE id='".$bookingId."'";
       $result=mysqli_query($this -> conn, $query);
-
+      if (mysqli_num_rows($result)==0) {
+          return false;
+      }
+      return true;
     }
   }
 ?>
