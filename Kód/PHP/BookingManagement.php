@@ -21,6 +21,8 @@
 			{
 				$response[]=$row;
 			}
+			//returning the response
+			return $response();
 		}
 		
 		function Booking($loggedInUser, $selectedSeats){
