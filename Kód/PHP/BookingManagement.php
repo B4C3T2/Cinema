@@ -60,8 +60,8 @@
 		}
 		
 		function Refuse($loggedInUser, $bookingId){
-			//Database connection will be soon(loggedInUser and bookingId will be checked by database connection)
-			//If the datas are matching, the booking will be deleted
+			//loggedInUser and bookingId will be checked by database connection
+			$query="DELETE FROM booking WHERE booking_id=".$bookingId."'";
 			return true;
 		}
 	}
