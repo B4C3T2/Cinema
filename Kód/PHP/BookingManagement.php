@@ -54,8 +54,9 @@
 			return true;
 		}
 		
-		function Leaving(){
-			//Booking table will be flushed in the database
+		function Leaving($id){
+			$query="DELETE FROM booking WHERE id=".$id."'";
+			
 		}
 		
 		function Refuse($loggedInUser, $bookingId){
