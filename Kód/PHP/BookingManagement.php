@@ -11,7 +11,7 @@
 		public $passWord;
 		public $bookingId;
 		
-		function Query(){
+		function Query($id){
 			global $connection;
 			//fetching data
 			$query="SELECT * FROM movie WHERE id='".$id."'";
@@ -25,9 +25,16 @@
 			return $response();
 		}
 		
-		function Booking($loggedInUser, $selectedSeats){
-			//Database connection will be soon(bookingId will be set by database connection)
-			return "Successful booking ".$this->bookingId;
+		function Booking($loggedInUser, $selectedSeats, $id){
+			global $connection;
+			$query="INSERT INTO booking SET id='".$id."', booked_seats='".$selectedSeats."'";
+			if(mysqli_query($connection, $query)){
+				$response='Successful booking.';
+			}
+			else{
+				$response='Booking failed!';
+			}
+			return $response;
 		}
 		
 		function BillGenerate($selectedSeats){
