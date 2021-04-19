@@ -43,7 +43,14 @@
 		}
 		
 		function Modificate($loggedInUser, $bookingId, $selectedSeats){
-			//Database connection will be soon(loggedInUser and bookingId will be checked by database connection)
+			//loggedInUser and bookingId will be checked by database connection
+			$query="UPDATE booking SET booked_seats='".$selectedSeats."' WHERE id='".$id"'";
+			if(mysqli_query($connection, $query)){
+				$response='Successfully modificated the booking.';
+			}
+			else{
+				$response='Booking modification failed.';
+			}
 			return true;
 		}
 		
