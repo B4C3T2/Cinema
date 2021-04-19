@@ -1,6 +1,9 @@
 <?php
 	include("DatabaseManagement.php");
 	class BookigManagement{
+		$database = new DataBase();
+		$connection =  $database->getConnstring();
+		
 		public $firstName;
 		public $lastName;
 		public $email;
