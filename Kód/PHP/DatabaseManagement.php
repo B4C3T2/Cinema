@@ -5,5 +5,9 @@ Class DataBase{
   var $password = "";
   var $dbname = "rest";
   var $conn;
+
+  function getConnstring() {
+    $con = mysqli_connect($this->servername, $this->username, $this->password, $this->dbname) or die("Connection failed: " . mysqli_connect_error()); 
+  }
 }
 ?>
