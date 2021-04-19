@@ -1,9 +1,9 @@
 <?php
 Class DataBase{
-  var $servername = "localhost";
-  var $username = "root";
-  var $password = "";
-  var $dbname = "cinema_database";
+  public string $servername = "localhost";
+  public string $username = "root";
+  public string $password = "";
+  public string $dbname = "cinema_database";
   var $conn;
 
   function getConnstring() {
@@ -16,6 +16,11 @@ Class DataBase{
        $this->conn = $con;
       }
       return $this->conn;
+    }
+    function checkBooking($bookingId) {
+      $con = $query="SELECT id FROM bookingTable WHERE id='".$bookingId."'";
+      $result=mysqli_query($this -> conn, $query);
+
     }
   }
 ?>
