@@ -3,4 +3,7 @@ CREATE TABLE IF NOT EXISTS booking_seats (
     userId INT UNSIGNED NOT NULL,
     movieId INT UNSIGNED NOT NULL,
     seatId INT UNSIGNED NOT NULL,
-    
+    CONSTRAINT Constr_CourseMembership_User_fk_Like
+        FOREIGN KEY User_fk (userId) REFERENCES usertable (id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+
