@@ -6,4 +6,7 @@ CREATE TABLE IF NOT EXISTS booking_seats (
     CONSTRAINT Constr_CourseMembership_User_fk_Like
         FOREIGN KEY User_fk (userId) REFERENCES usertable (id)
         ON DELETE CASCADE ON UPDATE CASCADE,
-
+    CONSTRAINT Constr_CourseMembership_Book_fk_Like
+        FOREIGN KEY Book_fk (movieId) REFERENCES moviestable (id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
