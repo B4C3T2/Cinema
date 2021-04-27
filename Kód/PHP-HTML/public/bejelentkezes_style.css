@@ -1,0 +1,128 @@
+body {
+	padding-bottom: 20px;
+  background-image: url(pictures/back.png);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+	text-align: center;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.login-wrapper {
+  height: 50vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  width: 500px;
+  max-width: 580px;
+  padding: 40px 40px 20px;
+  background: rgba(5,5,5,0.7);
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.9);
+}
+
+table, td {
+  padding: 10px;
+}
+
+footer{
+  position: absolute;
+  padding-bottom: 18px;
+  bottom: 0px;
+  left: 9px;
+  color:white;
+}
+
+.navbar-nav{
+  font-size: 20px !important;
+  font-weight: lighter !important;
+}
+
+.logo > button{
+  font-size: 70px; 
+  color: white;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 600;
+  background-color:rgba(0,0,0,0);
+  font-family: "Brush Script MT", cursive; 
+  outline: black; 
+  background: transparent !important;
+  border: none;
+  margin: 0;
+  position: relative;
+  top: 50px;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.logo:hover{
+  transition: transform .5s ease;
+  transform: scale(1.1);
+}
+
+.form > button{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-weight:300;
+  background-color:rgba(0,0,0,0);
+  text-align:center;
+  transition: all 0.2s;
+  font-size: 25px;
+}
+
+.bejelgomb > button:hover {
+  color:rgba(0,0,0,0) !important;
+  background-color:rgba(255,255,255,0.2) !important;
+}
+
+a{
+  color: white;
+  text-decoration: none !important;
+}
+
+a:hover{
+color: white;
+}
+
+header{
+  font-size: 25px;
+  padding: 20px;
+}
+
+h2{
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 200;
+  color: #8c8c8c;
+}
+
+.container-fluid{
+  height: 80px;
+  background-color: hsl(202, 11%, 13%);
+}
+
+.nav-link:hover{
+  transition: transform .5s ease;
+  transform: scale(1.1);
+}
