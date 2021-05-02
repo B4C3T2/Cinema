@@ -13,3 +13,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 		echo "Hiányzó adat(ok)!";
 	} else if(!filter_var($postData['email'], FILTER_VALIDATE_EMAIL)) {
 		echo "Az email cím nem érvényes!";
+	} else if ($postData['password'] != $postData['password1']) {
+		echo "A jelszavak nem egyeznek!";
