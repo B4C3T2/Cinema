@@ -4,7 +4,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 		'fname' => $_POST['first_name'],
 		'lname' => $_POST['last_name'],
 		'email' => $_POST['email'],
-		'email1' => $_POST['email1'],
+		'uid' => $_POST['uid'],
 		'password' => $_POST['password'],
 		'password1' => $_POST['password1']
 	];
