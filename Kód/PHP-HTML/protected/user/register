@@ -11,3 +11,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 
 	if(empty($postData['fname']) || empty($postData['lname']) || empty($postData['email']) || empty($postData['uid']) || empty($postData['password']) || empty($postData['password1'])) {
 		echo "Hiányzó adat(ok)!";
+	} else if(!filter_var($postData['email'], FILTER_VALIDATE_EMAIL)) {
+		echo "Az email cím nem érvényes!";
