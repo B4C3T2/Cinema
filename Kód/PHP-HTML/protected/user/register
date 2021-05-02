@@ -1,0 +1,10 @@
+<?php 
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
+	$postData = [
+		'fname' => $_POST['first_name'],
+		'lname' => $_POST['last_name'],
+		'email' => $_POST['email'],
+		'email1' => $_POST['email1'],
+		'password' => $_POST['password'],
+		'password1' => $_POST['password1']
+	];
