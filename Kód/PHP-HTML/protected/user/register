@@ -17,3 +17,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 		echo "A jelszavak nem egyeznek!";
 	} else if(strlen($postData['password']) < 3) {
 		echo "A jelszónak legalább 3 karakterből kell állnia!";
+	} else if(!UserRegister($postData['email'], $postData['password'], $postData['fname'], $postData['lname'], $postData['uid']) {
+		echo "A regisztráció sikertelen!";
+	}
+
+	$postData['password'] = $postData['password1'] = "";
+}
