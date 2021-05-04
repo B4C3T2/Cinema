@@ -27,8 +27,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbars/">
   <!-- Saját CSS -->
-  <link rel="stylesheet" type="text/css" href="../../public/bejelentkezes_style.css">
-  <link rel="shortcut icon" href="../../public/pictures/icon.png"/>
+  <link rel="stylesheet" type="text/css" href="../CSS/bejelentkezes_style.css">
+  <link rel="shortcut icon" href="../../CSS/pictures/icon.png"/>
 </head>
 <body>
   <div>
@@ -44,7 +44,7 @@
             <tr>
               <td class="bejelgomb">
                 <button type="submit"  value="lemondas" class="btn btn-outline-secondary">
-                  <a href ="home.html">Lemondás</a>
+                  <a href ="index.php?P=home">Lemondás</a>
                 </button>
               </td>
             </tr>

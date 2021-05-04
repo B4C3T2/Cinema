@@ -27,12 +27,13 @@
   <meta charset="utf-8">
   <title>Hyper Cinema - Foglalás</title>
   <!-- Saját CSS -->
-  <link rel="stylesheet" type="text/css" href="../../public/foglalas_style.css">
-  <link rel="shortcut icon" href="../../public/pictures/icon.png"/>
+  <link rel="stylesheet" type="text/css" href="../CSS/foglalas_style.css">
+  <link rel="shortcut icon" href="../../CSS/pictures/icon.png"/>
 </head>
 <body>
   <div class="container-fluid">
     <content>
+    	<button type="submit"  value="book" class="btn btn-outline-secondary"><a href ="index.php?P=home">Foglalás</a></button>
 		<table>
 			<tr>
 				<th><div class="seat"><input type="checkbox" id="seat1"></div></th>
