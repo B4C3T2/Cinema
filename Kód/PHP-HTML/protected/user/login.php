@@ -1,4 +1,4 @@
-<?php 
+<?php
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login']))
   $postData = [
     'uid' => $_POST['uid'],
@@ -15,7 +15,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login']))
 }
 ?>
 
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -25,64 +24,37 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login']))
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbars/">
   <!-- Saját CSS -->
   <link rel="stylesheet" type="text/css" href="../CSS/bejelentkezes_style.css">
-  <link rel="shortcut icon" href="../CSS/pictures/icon.png"/>
+  <link rel="shortcut icon" href="../../CSS/pictures/icon.png"/>
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-        <div class="logo">
-          <button type="button"  value="logo" style="text-align:center;">
-            <a href ="home.html">Hyper Cinema</a>
-          </button>
-        </div>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-              <a class="nav-link" href="home.html">Főoldal</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Bejelentkezés</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="regisztracio.html">Regisztráció</a>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <div>
     <header>Bejelentkezés<hr></header>
-    <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz bejelentkezhet,<br> vagy ha még nem tag, hozzáadhatja fiókját a <a href="regisztracio.html" title="Kattintson ide a regisztrációhoz!">regisztráció</a> segítségével.</h2>
+    <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz bejelentkezhet,<br> vagy ha még nem tag, hozzáadhatja fiókját a <a href="register.php" title="Kattintson ide a regisztrációhoz!">regisztráció</a> segítségével.</h2>
     <nav>
       <div class="login-wrapper">
         <form action="" class="form">
           <table>
             <tr>
               <td>Felhasználónév:</td>
-              <td><input type="text" name="loginUser" id="loginUser" maxlength="20" required></td>
+              <td><input type="text" name="uid" id="username" maxlength="20" required></td>
             </tr>
             <tr>
               <td>Jelszó:</td>
-              <td><input type="password" name="loginPassword" id="loginPassword" maxlength="250" required></td>
+              <td><input type="password" name="password" id="password" maxlength="250" required></td>
             </tr>
             <tr>
               <td>
                 
               </td>
               <td class="bejelgomb">
-                <button type="submit"  value="bejelentkezes" class="btn btn-outline-secondary">
-                  <a href ="home.html">Bejelentkezés</a>
+                <button type="submit"  value="login" class="btn btn-outline-secondary">
+                  <a href="home.html">Bejelentkezés</a>
                 </button>
               </td>
             </tr>
             <tr>
               <td>
-                <a href="regisztracio.html" title="Kattintson ide a regisztrációhoz!">Még nem vagyok tag!</a>
+                <a href="register.php" title="Kattintson ide a regisztrációhoz!">Még nem vagyok tag!</a>
               </td>
               <td>
                 
@@ -94,9 +66,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login']))
     </nav>
 
     <content></content>
-    <footer>
-      Copyright &copy; 2021 HyperTeam
-    </footer>
   </div>
 </body>
 </html>
