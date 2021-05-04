@@ -9,6 +9,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
     echo "Hiányzó adat(ok)!";
   } else if(!UserLogin($postData['uid'], $postData['password'])) {
     echo "A felhasználónév vagy a jelszó hibás!";
+  } else if(!UserLogin($postData['email'], $postData['password'])) {
+    echo "Hibás email cím vagy jelszó!";
   }
 
   $postData['password'] = "";
