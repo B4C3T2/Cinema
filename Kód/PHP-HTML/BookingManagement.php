@@ -9,7 +9,8 @@
 		public $lastName;
 		public $email;
 		public $passWord;
-		public $bookingId;
+		public $
+		;
 		
 		function Query($id){
 			global $connection;
