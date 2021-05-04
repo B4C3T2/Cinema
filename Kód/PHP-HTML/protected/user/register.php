@@ -27,7 +27,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 
 
 
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -37,35 +36,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbars/">
   <!-- Saját CSS -->
   <link rel="stylesheet" type="text/css" href="../CSS/regisztracio_style.css">
-  <link rel="shortcut icon" href="../CSS/pictures/icon.png"/>
+  <link rel="shortcut icon" href="../../CSS/pictures/icon.png"/>
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-        <div class="logo">
-          <button type="button"  value="logo" style="text-align:center;">
-            <a href ="home.html">Hyper Cinema</a>
-          </button>
-        </div>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-              <a class="nav-link" href="home.html">Főoldal</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="bejelentkezes.html">Bejelentkezés</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Regisztráció</a>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
   <div>
     <header>Regisztráció<hr></header>
@@ -76,15 +49,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
           <table>
             <tr>
               <td>Felhasználónév:</td>
-              <td><input type="text" name="loginUser" id="loginUser" maxlength="20" required></td>
+              <td><input type="text" name="uid" id="loginUser" maxlength="20" required></td>
             </tr>
             <tr>
               <td>Vezetéknév:</td>
-              <td><input type="text" name="lastName" id="lastName" maxlength="20" required></td>
+              <td><input type="text" name="lname" id="lastName" maxlength="20" required></td>
             </tr>
             <tr>
               <td>Keresztnév:</td>
-              <td><input type="text" name="firstName" id="firstName" maxlength="20" required></td>
+              <td><input type="text" name="fname" id="firstName" maxlength="20" required></td>
             </tr>
             <tr>
               <td>Email:</td>
@@ -92,27 +65,27 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
             </tr>
             <tr>
               <td>Jelszó:</td>
-              <td><input type="password" name="passWord" id="passWord" maxlength="250" required></td>
+              <td><input type="password" name="password" id="passWord" maxlength="250" required></td>
             </tr>
             <tr>
               <td>Jelszó újra:</td>
-              <td><input type="password" name="loginPasswordAgain" id="loginPasswordAgain" maxlength="250" required></td>
+              <td><input type="password" name="password1" id="loginPasswordAgain" maxlength="250" required></td>
             </tr>
             <tr>
               <td class="form-gombok">
                 <button type="button"  value="megse" class="btn btn-outline-secondary">
-                  <a href ="home.html">Mégse</a>
+                  <a href ="home.php">Mégse</a>
                 </button>
               </td>
               <td class="form-gombok">
-                <button type="submit"  value="regisztracio" class="btn btn-outline-secondary">
-                  <a href ="bejelentkezes.html">Regisztráció</a>
+                <button type="submit"  value="register" name="register" class="btn btn-outline-secondary">
+                  <a href ="login.php">Regisztráció</a>
                 </button>
               </td>
             </tr>
             <tr>
               <td>
-                <a href="bejelentkezes.html" title="Kattintson ide a bejelentkezéshez!">Már tag vagyok!</a>
+                <a href="login.php" title="Kattintson ide a bejelentkezéshez!">Már tag vagyok!</a>
               </td>
               <td>
                 
@@ -124,9 +97,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
     </nav>
 
     <content></content>
-    <footer>
-      Copyright &copy; 2021 HyperTeam
-    </footer>
+
   </div>
 </body>
 </html>
