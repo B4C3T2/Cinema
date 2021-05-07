@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 
   <div>
     <header>Regisztráció<hr></header>
-    <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz regisztrálnia kell,<br> vagy ha már tag, bejelentkezhet fiókjába a <a href="bejelentkezes.html" title="Kattintson ide a bejelentkezéshez!">bejelentkezés</a> segítségével.</h2>
+    <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz regisztrálnia kell,<br> vagy ha már tag, bejelentkezhet fiókjába a <a href="index.php?P=login" title="Kattintson ide a bejelentkezéshez!">bejelentkezés</a> segítségével.</h2>
     <nav>
       <div class="login-wrapper">
         <form action="" class="form">
@@ -74,18 +74,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
             <tr>
               <td class="form-gombok">
                 <button type="button"  value="megse" class="btn btn-outline-secondary">
-                  <a href ="home.php">Mégse</a>
+                  <a href ="index.php">Mégse</a>
                 </button>
               </td>
               <td class="form-gombok">
                 <button type="submit"  value="register" name="register" class="btn btn-outline-secondary">
-                  <a href ="login.php">Regisztráció</a>
+                  <a href ="index.php?P=login">Regisztráció</a>
                 </button>
               </td>
             </tr>
             <tr>
               <td>
-                <a href="login.php" title="Kattintson ide a bejelentkezéshez!">Már tag vagyok!</a>
+                <a href="index.php?P=login" title="Kattintson ide a bejelentkezéshez!">Már tag vagyok!</a>
               </td>
               <td>
                 
