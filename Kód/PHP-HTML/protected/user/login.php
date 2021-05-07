@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 <body>
   <div>
     <header>Bejelentkezés<hr></header>
-    <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz bejelentkezhet,<br> vagy ha még nem tag, hozzáadhatja fiókját a <a href="register.php" title="Kattintson ide a regisztrációhoz!">regisztráció</a> segítségével.</h2>
+    <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz bejelentkezhet,<br> vagy ha még nem tag, hozzáadhatja fiókját a <a href="index.php?P=register" title="Kattintson ide a regisztrációhoz!">regisztráció</a> segítségével.</h2>
     <nav>
       <div class="login-wrapper">
         <form action="" class="form">
@@ -50,13 +50,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
               </td>
               <td class="bejelgomb">
                 <button type="submit"  value="login" class="btn btn-outline-secondary">
-                  <a href="home.html">Bejelentkezés</a>
+                  <a href="index.php">Bejelentkezés</a>
                 </button>
               </td>
             </tr>
             <tr>
               <td>
-                <a href="register.php" title="Kattintson ide a regisztrációhoz!">Még nem vagyok tag!</a>
+                <a href="index.php?P=register" title="Kattintson ide a regisztrációhoz!">Még nem vagyok tag!</a>
               </td>
               <td>
                 
