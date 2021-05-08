@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Hyper Cinema - Főoldal</title>
   <!-- Saját CSS -->
-  <link rel="stylesheet" type="text/css" href="../CSS/home_style.css">
-  <link rel="shortcut icon" href="../../CSS/pictures/icon.png"/>
+  <link rel="stylesheet" type="text/css" href="./public/home_style.css">
+  <link rel="shortcut icon" href="./public/pictures/icon.png"/>
 </head>
 <body>
   <div class="container-fluid">
