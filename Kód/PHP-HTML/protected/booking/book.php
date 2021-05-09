@@ -26,7 +26,7 @@
 			'movie_id' => $movieId,
 			'seat_id' => $seatDb
 			];
-			else {
+			} else {
 				$query = "INSERT INTO booking_seats (uid, movieId, seatId) VALUES (:user_id, :movie_id, :seat_id)";
 				$params = [
 					':user_id' => $postData['user_id'],
@@ -40,8 +40,7 @@
 			}
 		} else {
 			echo "Ki kell választani székeket a foglaláshoz!";
-		}
-	}
+	}	
 ?>
 <!DOCTYPE html>
 <html>
