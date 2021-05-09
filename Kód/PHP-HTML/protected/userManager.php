@@ -20,8 +20,8 @@ function UserLogin($username, $password) {
 	$record = getRecord($query, $params);
 	if(!empty($record)) {
 		$_SESSION['uid'] = $record['id'];
-		$_SESSION['fname'] = $record['fname'];
-		$_SESSION['lname'] = $record['lname'];
+		$_SESSION['fname'] = $record['firstname'];
+		$_SESSION['lname'] = $record['lastname'];
 		$_SESSION['email'] = $record['email'];
 		$_SESSION['password'] = $record['password'];
 		$_SESSION['username'] = $record['username'];
