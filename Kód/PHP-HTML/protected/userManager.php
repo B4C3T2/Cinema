@@ -24,6 +24,7 @@ function UserLogin($username, $password) {
 		$_SESSION['lname'] = $record['lname'];
 		$_SESSION['email'] = $record['email'];
 		$_SESSION['password'] = $record['password'];
+		$_SESSION['username'] = $record['username'];
 		header('Location: index.php');
 	}
 	return false;
