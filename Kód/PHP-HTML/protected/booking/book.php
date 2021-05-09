@@ -1,17 +1,17 @@
 <?php
-	if(isset($_POST['1']){
+	if(isset($_POST['1'])){
 		$movieId = 1;
 		$title = "The Gentleman";
-	} else if(isset($_POST['2']){
+	} else if(isset($_POST['2'])){
 		$movieId = 2;
 		$title = "007 No Time To Die";
-	}else if(isset($_POST['3']){
+	}else if(isset($_POST['3'])){
 		$movieId = 3;
 		$title = "Top Gun Maverick";
-	}else if(isset($_POST['4']){
+	}else if(isset($_POST['4'])){
 		$movieId = 4;
 		$title = "Black Widow";
-	}else if(isset($_POST['5']){
+	}else if(isset($_POST['5'])){
 		$movieId = 5;
 		$title = "Justice League";
 	}
@@ -58,40 +58,40 @@
     	<button type="submit"  value="book" class="btn btn-outline-secondary"><a href ="index.php?P=home">Foglalás</a></button>
 		<table>
 			<tr>
-				<th><div class="seat"><input type="checkbox" id="seat1"></div></th>
-				<th><div class="seat"><input type="checkbox" id="seat2"></div></th>
-				<th><div class="seat"><input type="checkbox" id="seat3"></div></th>
-				<th><div class="seat"><input type="checkbox" id="seat4"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat1"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat2"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat3"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat4"></div></th>
 				<th></th>
 				<th></th>
-				<th><div class="seat"><input type="checkbox" id="seat5"></div></th>
-				<th><div class="seat"><input type="checkbox" id="seat6"></div></th>
-				<th><div class="seat"><input type="checkbox" id="seat7"></div></th>
-				<th><div class="seat"><input type="checkbox" id="seat8"></div></th>				
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat5"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat6"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat7"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat8"></div></th>				
 			</tr>
 			<tr>
-				<td><div class="seat"><input type="checkbox" id="seat9"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat10"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat11"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat12"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat9"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat10"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat11"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat12"></div></td>
 				<td></td>
 				<td></td>
-				<td><div class="seat"><input type="checkbox" id="seat13"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat14"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat15"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat16"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat13"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat14"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat15"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat16"></div></td>
 			</tr>
 			<tr>
-				<td><div class="seat"><input type="checkbox" id="seat17"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat18"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat19"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat20"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat21"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat22"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat23"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat24"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat25"></div></td>
-				<td><div class="seat"><input type="checkbox" id="seat26"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat17"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat18"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat19"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat20"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat21"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat22"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat23"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat24"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat25"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat26"></div></td>
 			</tr>
 		</table>
 	</content>
