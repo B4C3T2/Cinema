@@ -56,6 +56,9 @@
   <div class="container-fluid">
     <content>
     	<button type="submit"  value="book" class="btn btn-outline-secondary"><a href ="index.php?P=home">Foglalás</a></button>
+    	<p> <?php
+    		$title
+    	?> </p>
 		<table>
 			<tr>
 				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat1"></div></th>
