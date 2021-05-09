@@ -9,10 +9,10 @@ function UserLogout() {
 	header('Location: index.php');
 }
 
-function UserLogin($email, $password) {
-	$query = "SELECT id, fname, lname, email, password FROM users WHERE email = :email AND password = :password";
+function UserLogin($username, $password) {
+	$query = "SELECT id, firstname, lastname, email, password FROM users WHERE username = :username AND password = :password";
 	$params = [
-		':email' => $email,
+		':username' => $username,
 		':password' => sha1($password)
 	]; 
 
@@ -20,27 +20,29 @@ function UserLogin($email, $password) {
 	$record = getRecord($query, $params);
 	if(!empty($record)) {
 		$_SESSION['uid'] = $record['id'];
-		$_SESSION['fname'] = $record['fname'];
-		$_SESSION['lname'] = $record['lname'];
+		$_SESSION['fname'] = $record['firstname'];
+		$_SESSION['lname'] = $record['lastname'];
 		$_SESSION['email'] = $record['email'];
 		$_SESSION['password'] = $record['password'];
+		$_SESSION['username'] = $record['username'];
 		header('Location: index.php');
 	}
 	return false;
 }
 
-function UserRegister($email, $password, $fname, $lname) {
-	$query = "SELECT id FROM users email = :email";
+function UserRegister($username, $email, $password, $fname, $lname) {
+	$query = "SELECT id FROM users WHERE email = :email";
 	$params = [ ':email' => $email ];
 
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(empty($record)) {
-		$query = "INSERT INTO users (fname, lname, email, password) VALUES (:fname, :lname, :email, :password)";
+		$query = "INSERT INTO users (firstname, lastname, email, password, username) VALUES (:fname, :lname, :email, :password,:username)";
 		$params = [
 			':fname' => $fname,
 			':lname' => $lname,
 			':email' => $email,
+			':username' => $username,
 			':password' => sha1($password)
 		];
 
