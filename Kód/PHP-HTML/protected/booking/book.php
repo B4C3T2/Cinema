@@ -1,14 +1,19 @@
 <?php
 	if(isset($_POST['1']){
 		$movieId = 1;
+		$title = "The Gentleman";
 	} else if(isset($_POST['2']){
 		$movieId = 2;
+		$title = "007 No Time To Die";
 	}else if(isset($_POST['3']){
 		$movieId = 3;
+		$title = "Top Gun Maverick";
 	}else if(isset($_POST['4']){
 		$movieId = 4;
+		$title = "Black Widow";
 	}else if(isset($_POST['5']){
 		$movieId = 5;
+		$title = "Justice League";
 	}
 	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
 		$seatDb = 0;
