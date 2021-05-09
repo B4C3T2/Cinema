@@ -9,10 +9,10 @@ function UserLogout() {
 	header('Location: index.php');
 }
 
-function UserLogin($email, $password) {
-	$query = "SELECT id, fname, lname, email, password FROM users WHERE email = :email AND password = :password";
+function UserLogin($username, $password) {
+	$query = "SELECT id, firstname, lastname, email, password FROM users WHERE username = :username AND password = :password";
 	$params = [
-		':email' => $email,
+		':username' => $username,
 		':password' => sha1($password)
 	]; 
 
