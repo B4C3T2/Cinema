@@ -36,11 +36,12 @@ function UserRegister($username, $email, $password, $fname, $lname) {
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(empty($record)) {
-		$query = "INSERT INTO users (fname, lname, email, password) VALUES (:fname, :lname, :email, :password)";
+		$query = "INSERT INTO users (firstname, lastname, email, password, username) VALUES (:fname, :lname, :email, :password,:username)";
 		$params = [
 			':fname' => $fname,
 			':lname' => $lname,
 			':email' => $email,
+			':username' => $username,
 			':password' => sha1($password)
 		];
 
