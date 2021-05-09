@@ -29,7 +29,7 @@ function UserLogin($email, $password) {
 	return false;
 }
 
-function UserRegister($email, $password, $fname, $lname) {
+function UserRegister($username, $email, $password, $fname, $lname) {
 	$query = "SELECT id FROM users email = :email";
 	$params = [ ':email' => $email ];
 
