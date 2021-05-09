@@ -6,7 +6,7 @@
 		if(empty($postData['booking_id'])){
 		echo "Hiányzó adat!";
 	} else {
-		$query = "DELETE FROM booking_seats WHERE id = :booking_id; ";
+		$query = "DELETE FROM bookingtable WHERE id = :booking_id; ";
 		$params = [
 			':booking_id' => $postData['booking_id']
 		];
