@@ -1,4 +1,15 @@
 <?php
+	if(isset($_POST['1']){
+		$movieId = 1;
+	} else if(isset($_POST['2']){
+		$movieId = 2;
+	}else if(isset($_POST['3']){
+		$movieId = 3;
+	}else if(isset($_POST['4']){
+		$movieId = 4;
+	}else if(isset($_POST['5']){
+		$movieId = 5;
+	}
 	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
 		$seatDb = 0;
 		if(!empty($_POST['seats'])) {
