@@ -105,17 +105,17 @@ A tesztadatoknak az alábbi követelményeknek kell megfelelniük:
 
 # 3 Tesztelési terv
 A frontend teszteléséhez a böngészőkbe beépített segédeszközökkel kerülnek tesztelésre. Előre beállítható képernyő méretekkel ellenőrizzük, hogy a méretek jól beállítottak a különböző képernyőkhöz. A teszt akkor sikeres, ha a főbb funkciók jól olvashatók és alkalmazhatók.
-A backend tesztelése minta input-okkal történik. A beviteli mezőkbe elsősorban a kívánt intervallumok és értékek kerülnek tesztelésre, majd ezután véletlenszerű értékekkel is ellenőrzés alá esnek. A teszt abban az esetben sikeres, ha a kívánt értékek elfogadásra kerülnek, a hibás értékekre a rendszer hibaüzenetet küld a felhasználó számára ami számára is információval szolgál.
-Azért, hogy hibás adat ne kerülhessen az adatbázisba, illetve illetéktelen személyen ne jussanak információkhoz a felhasználókról, ezért több figyelmet fordítunk ezen részek tesztelésére.
+A backend tesztelése minta inputokkal történik. A beviteli mezőkbe elsősorban a kívánt intervallumok és értékek kerülnek tesztelésre, majd ezután véletlenszerű értékekkel is ellenőrzés alá esnek. A teszt abban az esetben sikeres, ha a kívánt értékek elfogadásra kerülnek, a hibás értékekre a rendszer hibaüzenetet küld a felhasználó számára, ami számára is információval szolgál.
+Azért, hogy hibás adat ne kerülhessen az adatbázisba, illetve illetéktelen személyen ne jussanak információkhoz a felhasználókról, több figyelmet fordítunk ezen részek tesztelésére.
 
 ## 3.1 Fejlesztői teszt
-Tervezés és fejlesztés során ügyelünk arra, hogy lehetőleg minden hibát kiküszöböljünk, de természetesen előfordulhatnak problémák, amikre nem gondoltunk. Ennek megelőzése képen, amikor egy modul elkészülésével megkezdjük a tesztelését.
+Tervezés és fejlesztés során ügyelünk arra, hogy lehetőleg minden hibát kiküszöböljünk, de természetesen előfordulhatnak problémák, amikre nem gondoltunk. Ennek megelőzése képpen, amikor egy modul elkészül, megkezdjük a tesztelését.
 
 ## 3.2 Integrációs teszt
-A szoftver nem használ külső rendszert, sem API ,sem egyéb módon, viszont az oldal által használt adatbázist többféle szerveren és adatbázis motor alatt tesztelésre kerülnek, hogy egy verzióváltás / platformváltás esetén se történhessen nagyobb kimaradás.
+A szoftver nem használ külső rendszert, sem API, sem egyéb módon, viszont az oldal által használt adatbázis többféle szerveren és adatbázismotor alatt tesztelésre kerül, hogy egy verzióváltás / platformváltás esetén se történhessen nagyobb kimaradás.
 
 ## 3.3 Elfogadási teszt
-A megrendelőnek számára átadásra kerül egy példány a weboldalról, aki egy hozzáértő személy segítségével, vagy általa kiválasztott felhasználókkal teszteli. Ha a megrendelő hibát tapasztal, azt a lehető leghamarabb jelezze a fejlesztő csapat felé, hogy a hiba minél előbb javításra kerüljön. Ha a megrendelő számára megfelel a szoftver, úgy elfogadásra kerül a teszt és megkezdődik az éles tesztelés.
+A megrendelő számára átadásra kerül egy példány a weboldalról, aki egy hozzáértő személy segítségével, vagy az általa kiválasztott felhasználókkal teszteli. Ha a megrendelő hibát tapasztal, azt a lehető leghamarabb jelezze a fejlesztő csapat felé, hogy a hiba minél előbb javításra kerüljön. Ha a megrendelő számára megfelel a szoftver, úgy elfogadásra kerül a teszt és megkezdődik az éles tesztelés.
 
 ## 3.4 Terheléses teszt
 Az elfogadási teszt jóváhagyását követően, a termék kiadása előtt, terhelés alá kell vetni a szoftvert. A tesztelés történhet valódi felhasználók bevonásával vagy script segítségével, mely több felhasználót kezel egyszerre és mindegyikkel az összes funkciót egy időben teszteli. A teszt során a szerver monitorozásra kerül. A teszt végeztével kiértékelésre kerül sor. Ha az előre megszabott határértékeket tapasztaljuk, a terhelési teszt sikerrel zárul. Ha nem, a megrendelővel és csapattal kommunikációt kell folytatni a probléma kiküszöbölésére.
