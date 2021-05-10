@@ -44,9 +44,9 @@ A terheléses teszt célja a tervezett kapacitások, valamint a rendelkezésre �
 ## 4. Tesztelési tábla
 |Sorszám| Funkció leírása | Vizsgálat módja/esz köze, részletes leírása | Elvárt eredmény [válaszidő, végrehajtási idő, egységnyi idő alatt végrehajtott tranzakció] | Eredmény | Megfelelősség státusza [Megfelelő, Pótlás határideje:] | Tesztelő |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1. |  |  |  |  |  |
-| 2. |  |  |  |  |  |
-| 3. |  |  |  |  |  |
-| 4. |  |  |  |  |  |
+| 1. | Főoldal háttérképének megjelenítése | Böngésző általi tesztelés | A háttérkép az oldal teljes területét fedje el. | Az oldalt teljes egészében lefedi. | Megfelelt | Majoros Norbert |
+| 2. | Főoldalon lévő gombok megjelenítése | Böngésző általi tesztelés | A gombok a megadott formázásoknak megfelelően jelenjen meg. | A gombok formázása haladéktalanul működik. | Megfelelt | Majoros Norbert |
+| 3. | Foglalási oldal háttérképének megjelenítése | Böngésző általi tesztelés | A háttérkép az oldal teljes területét fedje el. | Az oldalt teljes egészében lefedi. | Megfelelt  | Majoros Norbert |
+| 4. | Foglalási oldalon lévő gombok megjelenítése | Böngésző általi tesztelés | A gombok a megadott formázásoknak megfelelően jelenjen meg. | A gombok formázása haladéktalanul működik. | Megfelelt | Majoros Norbert |
 | 5. |  |  |  |  |  |
 | 6. |  |  |  |  |  |
