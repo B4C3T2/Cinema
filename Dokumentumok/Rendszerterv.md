@@ -1,18 +1,18 @@
 # Rendszerterv
->Cinema
->HyperTeam
+>Csoport neve: HyperTeam
+>Projekt neve: HyperCinema
 
 ## A rendszer célja
 
 Egy olyan  rendszert fejlesztünk, ami egy mozi gyorsabb, áttekinthetőbb rendszerét szeretné létrehozni, ezzel megkönnyítve a szórakozni járó emberek fogalásait. A rendszer célja, hogy az eddigiekben használt offline rendszert modernizáljuk. Ezentúl a foglalás menete, a szabad, illetve a foglalt helyek követése, a számla összegének kiszámítása elektronikus módon fog történni. A rendszer az egyszerűségre alapoz ,hogy minél könnyebben és egyszerűbben elsajátítható legyen a foglaló fél számára. A projekt netes böngészőből indítható lesz így akármilyen platformon elérhető, nem létfontosságú, hogy a személy egy irodai környezetben legyen. Akár egy tabletről is le tudjuk foglalni a megfelelő férőhelyet. A rendszerünk nyilvántartja a szabad és foglalt férőhelyeket, illetve egy grafikus felületen is láthatóak ezek (A megfelelő intervallumok között).
-A rendszer kezelését részben a felhasználó oldja meg, a foglalásnál ő viheti majd fel az adatokat. Ha az ügyfél szeretne a moziban egy férőhelyet lefoglalni , akkor előbb regisztrálásra lesz szüksége ahol meg kell adni a személyes adatait ami arra szolgál, hogy későbbiekben letudja foglalni az ülő helyet az adott adatokkal. Ha ez megtörtént le is foglalhatjuk a helyet. Ha a vendég le szeretné mondani a foglalását, akkor ezt megteheti. A fogalás után a rendszer egy összeget fog generálni, hogy esetlegesen mennyit kell a lefoglalt helyekért fizetnie.
+A rendszer kezelését részben a felhasználó oldja meg, a foglalásnál ő viheti majd fel az adatokat. Ha az ügyfél szeretne a moziban egy férőhelyet lefoglalni, akkor előbb regisztrálásra lesz szüksége ahol meg kell adni a személyes adatait ami arra szolgál, hogy későbbiekben letudja foglalni az ülő helyet az adott adatokkal. Ha ez megtörtént le is foglalhatjuk a helyet. Ha a vendég le szeretné mondani a foglalását, akkor ezt megteheti. A fogalás után a rendszer egy összeget fog generálni, hogy esetlegesen mennyit kell a lefoglalt helyekért fizetnie.
 A projekt netes böngészőből lesz indítható, így akármilyen platformon elérhető lesz, nem létfontosságú, hogy a személy egy irodai környezetben tartózkodjon. Akár egy tabletről is le tudjuk majd foglalni a megfelelő férőhelyet.
 
 
 ## Projekt terv
 
 A projektet webalkalmazásként  fejlesztjük frontend és backend segítségével. Az elkülönített feladatokon más-más emberek dolgoznak majd.
-A backend fejlesztése Java, a frontend fejlesztése pedig PHP segítségével fog zajlani.
+A backend fejlesztése PHP, a frontend fejlesztése pedig HTML segítségével fog zajlani.
 
 **Projekt szerepkörök, felelősségek**
 -   Szerepkörök:
@@ -24,14 +24,18 @@ A backend fejlesztése Java, a frontend fejlesztése pedig PHP segítségével f
     -   Junior fejlesztő: A projektet készíti el. 
     
 **Projekt munkások és felelősségeik**
--   Webfelület: -még nincs meghatározva
--   Frontend: -még nincs meghatározva
--   Backend: -még nincs meghatározva
+
+-   Frontend: Majoros Norbert, Tóth Szabina
+-   Backend: Heim József, Nagy Milán
 
 **Ütemterv**
-	-még nincs meghatározva
+-	Első mérés: 2021. március 16.
+-	Második mérés: 2021. április 20.
+-	Harmadik mérés: 2021. május 11.
+	
 **Mérföldkövek**
-	-még nincs meghatározva
+1.	Prototípus bemutatása
+2.	Kész projekt bemutatása
 
 
 ## Üzleti folyamatok modellje
@@ -50,13 +54,13 @@ A cél, hogy adott időközre megkapjuk, hogy mely ülések szabadok, illetve fo
 ## Követelmények
 
 **Funkcionális**
-- Webes környezetben futattható legyen.
+- Webes környezetben futtatható legyen.
 - Felhasználók adatainak tárolása, listázása.
 
 **A felhasználó lehetőségei:**
 
 - Lekérdezheti a szabad helyeket egy adott időpontban a vetítésre.
-- Megtadhatja az adatait a rendszerbe a regisztrációhoz.
+- Megadhatja adatait a rendszerbe való regisztráláshoz.
 - Le tudja foglalni a megfelelő helye(ke)t bejelentkezés után.
 - Megszüntetheti illetve módosíthatja a foglalást.
 
@@ -94,10 +98,10 @@ AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) 
 
 **A felhasználó, mint a rendszer felhasználója**
 - Lekérdezheti a szabad férőhelyeket egy adott időközre, kérése szerint.
-- Betáplálhatja a rendszerbe a kérést miszerint melyik filmre, melyik időintervallumban, hány férőhelyet foglalna le.
+- Betáplálhatja a rendszerbe a kérést, miszerint melyik filmre, melyik időintervallumban, hány férőhelyet foglalna le.
 - Betáplálhatja saját adatait a rendszerbe a foglaláshoz.
 - Le tudja foglalni a megfelelő helyet.
-- Megszüntetheti illetve módosíthatja a foglalást.
+- Megszüntetheti, illetve módosíthatja a foglalást.
 - A rendszer segítségével ki tudja nyomtatni a számlát.
 
 **Menü hierarchiák**
@@ -114,9 +118,11 @@ vagy
 - Szabad és foglalt ülőhelyek
 
 *Vendég létrehozása:*
-- Név
+- Felhasználónév
 - Email
-- Telefonszám
+- Vezetéknév
+- Keresztnév
+- Jelszó
     > Létrehoz
 
 *Foglalás:*
@@ -129,29 +135,30 @@ vagy
 	 >Foglal
 
 **Képernyő tervek**
->Képernyőtervek -még nincs meghatározva
+>Képernyőtervek elkészítve a Dokumentumok mappában
 
 
 ## Fizikai környezet
 
 **Fizikai környezet**
+
 Itt határozzuk meg, hogy milyen platformon fogunk fejleszteni, milyen operációs rendszerre és hardverre. Gyakran fontos tudnunk a hálózat felépítését is, például, hogy van-e tűzfal, az milyen portokat engedélyez. Ha vannak megvásárolt komponenseink, azokat is itt kell megadnunk.
-A backend fejlesztése Java, a frontend fejlesztése PHP segítségével zajlik.
+A backend fejlesztése PHP, a frontend fejlesztése HTML segítségével zajlik.
 Az alkalmazás webplatformra készül.
 Nincsenek megvásárolt komponenseink.
 
 **Fejlesztői eszközök**
- - Linux, bash, screen, curl 
- - Java, Maven, ItelliJ IDEA
- - Node, npm, WebStorm
- - Docker, docker-compose, Dockstation
- - Postman
- - git (Github account)
- - React
+ - Windows, Mac
+ - PHP fejlesztői környezet, böngésző
+ - Adatbáziskezelő: MySQL, phpMyAdmin
+ - Szövegszerkesztők: SublimeText, Notepad++
+ - Böngésző
+ - git (Github account), GitKraken
  - PHP
  - MySQL
+ 
  **Keretrendszer**
- - Spring framework
+ - .NET framework
  
 A weboldal használatához egy egyszerű böngészőre van szükség, így akármilyen platformon elérhető, nem létfontosságú, hogy a személy egy irodai környezetben legyen. Akár egy tabletről is le tudjuk foglalni a megfelelő férőhelyeket.
 
@@ -159,25 +166,25 @@ A weboldal használatához egy egyszerű böngészőre van szükség, így akár
 ## Architekturális terv
 
 **Backend**
-- A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySQL-t használunk.
-- A kliens oldali programokat egy PHP alapú REST api szolgálja ki, ez csatlakozik az adatbázis szerverhez. A kliensekkel JSON objektumok segítségével kommunikál.
+- A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben phpMyAdmin-t használunk.
+- A kliens oldali programokat egy PHP fájl szolgálja ki, ez csatlakozik az adatbázis szerverhez.
     
 **Frontend**
-- A Webes felület főként PHP segítségével fog készülni.
-- Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében.
+- A webes felület főként HTML segítségével fog készülni.
+- Ezeket a technológiákat amennyire csak lehet, külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság és könnyebb bővítés érdekében.
 - Képes lesz felhasználni a Backend részen futó szolgáltatás metódusait, ezáltal tud felvinni és lekérdezni adatokat az adatbázisból.
 
 
-## Adatbázis terv
+
 ## Adatstruktúrák definiálása
 
-**K1: Férőhely-lekérdezés:**
+**Férőhely-lekérdezés**
 
-**K2: Foglalás:**
+**Foglalás**
 
-**K3: Számla generálása:**
+**Számla generálása**
 
-**K4: Módosítás:**
+**Módosítás**
 
 **Férőhelyek:**
 
@@ -189,15 +196,15 @@ A weboldal használatához egy egyszerű böngészőre van szükség, így akár
 
 **Vendég:**
 
-- Egy vendégnek van neve, e-mail címe, jelszava
+- Egy vendégnek van neve, felhasználóneve, e-mail címe és jelszava.
 
 **Foglalás:**
 
-- Egy foglalásban található a hely száma, a film kezdetének illetve befejezésének időpontja. A vendég e-mail jelzi, a helyet melyik vendég foglalta le.
+- Egy foglalásban található a hely száma, a film címe, a film kezdetének illetve befejezésének időpontja.
 
 **Foglalás lemondása/megszakítása:**
 
-- A foglalás vissza mondható/törölhető. Minden foglalásnak generált id-je van. A felhasználó ez alapján törölheti, vagy módosíthatja a foglalást.
+- A foglalás lemondható/törölhető. Minden foglalásnak generált id-je van. A felhasználó ez alapján törölheti vagy módosíthatja a foglalást.
 
 **Számla:**
 
