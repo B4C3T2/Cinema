@@ -52,7 +52,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
             </tr>
             <tr>
               <td>
-                <a href="index.php?P=register" title="Kattintson ide a regisztrációhoz!">Még nem vagyok tag!</a>
+                <a href="index.php?P=register" title="Kattintson ide a regisztrációhoz!">Még nem vagyok tag! </a>
               </td>
               <td>
                 
