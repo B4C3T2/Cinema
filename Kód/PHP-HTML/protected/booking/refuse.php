@@ -6,9 +6,10 @@
 		if(empty($postData['booking_id'])){
 		echo "Hiányzó adat!";
 	} else {
-		$query = "DELETE FROM bookingtable WHERE id = :booking_id; ";
+		$query = "DELETE FROM bookingtable WHERE id = :booking_id AND uid = :uid";
 		$params = [
-			':booking_id' => $postData['booking_id']
+			':booking_id' => $postData['booking_id'],
+			':uid' = $_SESSION['uid']
 		];
 		require_once DATABASE_CONTROLLER;
 		if(!executeDML($query, $params)) {
