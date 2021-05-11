@@ -45,54 +45,42 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
     <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz regisztrálnia kell,<br> vagy ha már tag, bejelentkezhet fiókjába a <a href="index.php?P=login" title="Kattintson ide a bejelentkezéshez!">bejelentkezés</a> segítségével.</h2>
     <nav>
       <div class="login-wrapper">
-        <form action="" class="form">
-          <table>
-            <tr>
-              <td>Felhasználónév:</td>
-              <td><input type="text" name="uid" id="loginUser" maxlength="20" required></td>
-            </tr>
-            <tr>
-              <td>Vezetéknév:</td>
-              <td><input type="text" name="last_name" id="lastName" maxlength="20" required></td>
-            </tr>
-            <tr>
-              <td>Keresztnév:</td>
-              <td><input type="text" name="first_name" id="firstName" maxlength="20" required></td>
-            </tr>
-            <tr>
-              <td>Email:</td>
-              <td><input type="text" name="email" id="email" maxlength="60" required></td>
-            </tr>
-            <tr>
-              <td>Jelszó:</td>
-              <td><input type="password" name="password" id="passWord" maxlength="250" required></td>
-            </tr>
-            <tr>
-              <td>Jelszó újra:</td>
-              <td><input type="password" name="password1" id="loginPasswordAgain" maxlength="250" required></td>
-            </tr>
-            <tr>
-              <td class="form-gombok">
-                <button type="button"  value="megse" class="btn btn-outline-secondary">
-                  <a href ="index.php">Mégse</a>
-                </button>
-              </td>
-              <td class="form-gombok">
-                <button type="submit"  value="register" name="register" class="btn btn-outline-secondary">
-                  <a href ="index.php?P=login">Regisztráció</a>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="index.php?P=login" title="Kattintson ide a bejelentkezéshez!">Már tag vagyok!</a>
-              </td>
-              <td>
-                
-              </td>
-            </tr>
-          </table>
-        </form>
+        <form method="post">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="registerFirstName">Keresztnév</label>
+      <input type="text" class="form-control" id="registerFirstName" name="first_name" value="<?=isset($postData) ? $postData['fname'] : "";?>">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="registerLastName">Vezetéknév</label>
+      <input type="text" class="form-control" id="registerLastName" name="last_name" value="<?=isset($postData) ? $postData['lname'] : "";?>">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="registerEmail">Email cím</label>
+      <input type="email" class="form-control" id="registerEmail" name="email" value="<?=isset($postData) ? $postData['email'] : "";?>">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="registerUsername">Felhasználónév</label>
+      <input type="text" class="form-control" id="registerUsername" name="uid" value="<?=isset($postData) ? $postData['uid'] : "";?>">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="registerPassword">Jelszó</label>
+      <input type="password" class="form-control" id="registerPassword" name="password" value="">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="registerPassword1">Jelszó mégegyszer</label>
+      <input type="password" class="form-control" id="registerPassword1" name="password1" value="">
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" name="register">Regisztrálás</button>
+</form>
       </div>
     </nav>
 
