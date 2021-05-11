@@ -6,7 +6,7 @@ body {
 	background-position: center;
 	background-size: 100%;
 }
-content > table{
+content > form > table{
 	
 	position: absolute;
 	bottom: 20px;
