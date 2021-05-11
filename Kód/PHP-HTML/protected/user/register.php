@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
     echo "A jelszavak nem egyeznek!";
   } else if(strlen($postData['password']) < 3) {
     echo "A jelszónak legalább 3 karakterből kell állnia!";
-  } else if(!UserRegister($postData['email'], $postData['password'], $postData['fname'], $postData['lname'], $postData['uid'])) {
+  } else if(!UserRegister($postData['uid'], $postData['email'], $postData['password'], $postData['fname'], $postData['lname'])) {
     echo "A regisztráció sikertelen!";
   }
 
@@ -39,37 +39,34 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
   <link rel="shortcut icon" href="../../CSS/pictures/icon.png"/>
 </head>
 <body>
-
-  <div>
-    <header>Regisztráció<hr></header>
+  <header>Regisztráció<hr></header>
     <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz regisztrálnia kell,<br> vagy ha már tag, bejelentkezhet fiókjába a <a href="index.php?P=login" title="Kattintson ide a bejelentkezéshez!">bejelentkezés</a> segítségével.</h2>
-    <nav>
-      <div class="login-wrapper">
-        <form action="" class="form">
+  <div class="login-wrapper">
+        <form method="post" class="form">
           <table>
             <tr>
               <td>Felhasználónév:</td>
-              <td><input type="text" name="uid" id="loginUser" maxlength="20" required></td>
+              <td><input type="text" name="uid" id="loginUser" maxlength="20" value="<?=isset($postData) ? $postData['uid'] : "";?>" required></td>
             </tr>
             <tr>
               <td>Vezetéknév:</td>
-              <td><input type="text" name="last_name" id="lastName" maxlength="20" required></td>
+              <td><input type="text" name="last_name" id="lastName" maxlength="20" value="<?=isset($postData) ? $postData['lname'] : "";?>" required></td>
             </tr>
             <tr>
               <td>Keresztnév:</td>
-              <td><input type="text" name="first_name" id="firstName" maxlength="20" required></td>
+              <td><input type="text" name="first_name" id="firstName" maxlength="20" value="<?=isset($postData) ? $postData['fname'] : "";?>" required></td>
             </tr>
             <tr>
               <td>Email:</td>
-              <td><input type="text" name="email" id="email" maxlength="60" required></td>
+              <td><input type="text" name="email" id="email" maxlength="60" value="<?=isset($postData) ? $postData['email'] : "";?>" required></td>
             </tr>
             <tr>
               <td>Jelszó:</td>
-              <td><input type="password" name="password" id="passWord" maxlength="250" required></td>
+              <td><input type="password" name="password" id="passWord" maxlength="250" value="" required></td>
             </tr>
             <tr>
               <td>Jelszó újra:</td>
-              <td><input type="password" name="password1" id="loginPasswordAgain" maxlength="250" required></td>
+              <td><input type="password" name="password1" id="loginPasswordAgain" maxlength="250" value="" required></td>
             </tr>
             <tr>
               <td class="form-gombok">
@@ -78,9 +75,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                 </button>
               </td>
               <td class="form-gombok">
-                <button type="submit"  value="register" name="register" class="btn btn-outline-secondary">
-                  <a href ="index.php?P=login">Regisztráció</a>
-                </button>
+                <button type="submit"  value="register" name="register" class="btn btn-outline-secondary">Regisztráció</button>
               </td>
             </tr>
             <tr>
@@ -94,10 +89,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
           </table>
         </form>
       </div>
-    </nav>
-
-    <content></content>
-
-  </div>
 </body>
 </html>
