@@ -22,7 +22,7 @@
 				$seatDb = $seatDb + 1;
 			}
 			$postData = [
-				'user_id' => $_POST['uid'],//??
+				'user_id' => $_SESSION['uid'],
 				'movie_id' => $movieId,
 				'seat_id' => $seatDb
 			];
