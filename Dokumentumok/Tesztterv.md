@@ -1,4 +1,5 @@
 
+
 # HyperTeam - Hyper Cinema tesztelési terv
 
 **A tesztterv célja**
@@ -68,12 +69,13 @@ Az általunk használt erőforrások egyike:
 
 **Feladatkörök és felelősségek**
 
-|**Feladatkör**|  **Felelősség/tevékenység**	|
+
+| Feladatkör | Felelősség/tevékenység |
 | --- | --- | --- |
-| Tesztelő |  A teszt végrehajtása, Észrevételek dokumentálása, Teszt dokumentáció archiválása	|
-|Szakértő 	 |  A szakértő az észrevételek elemzi és megoldást javasol.	|
-| Teszt koordinátor |  Teszt terv készítése,  A tesztterv jóváhagyatása a projektmenedzserrel,  Teszt forgatókönyvek létrehozása,  Inkonzisztenciák kezelése,   Helyes és időbeni hibakezelés,   Szükség esetén problémák eszkalálása a projekt menedzsernek,   Végső riport készítése,   Teszt dokumentum archiválása,   Az észrevételek státuszának követése, ill. dokumentálása 	|
-|  Projektvezető		|  Teszt terv jóváhagyása, Teszt forgatókönyv (testscript) jóváhagyása	|
+| Tesztelő | A teszt végrehajtása, Észrevételek dokumentálása, Teszt dokumentáció archiválása |
+| Szakértő | A szakértő az észrevételek elemzi és megoldást javasol. |
+| Teszt koordinátor | Teszt terv készítése,  A tesztterv jóváhagyatása a projektmenedzserrel,  Teszt forgatókönyvek létrehozása,  Inkonzisztenciák kezelése,   Helyes és időbeni hibakezelés,   Szükség esetén problémák eszkalálása a projekt menedzsernek,   Végső riport készítése,   Teszt dokumentum archiválása,   Az észrevételek státuszának követése, ill. dokumentálása. |
+| Projektvezető | Teszt terv jóváhagyása, Teszt forgatókönyv (testscript) jóváhagyása. |
 
 ## 2.2 Tesztkörnyezet
 
@@ -90,16 +92,9 @@ A tesztadatok elkészítéséért és feltöltéséért felelős személy(ek):
 A tesztadatoknak az alábbi követelményeknek kell megfelelniük:
 - Az alapadatok értékkészlete az éles rendszerrel megegyező kell, hogy legyen.
 
-## 2.4 Leszállítandó teszt dokumentumok
 
-| **Cím** | **Felelős személy** | **Szállítás gyakorisága** | **Szállítás módja** |
-| --- | --- | --- | --- |
-| Tesztterv |  |  |  |
-| Teszt-esetek |  |  |  |
-| Tesztjegyőkönyvek |  |  |  |
-| Tesztelési jelentés  |  |  |  |
 
-## 2.5 Tesztelési eszközök
+## 2.4 Tesztelési eszközök
 - A böngésző beépíített segédeszközei
 - Weboldal validátor
 
@@ -144,39 +139,8 @@ A teszt elvégzésének meghatározott sorrendjét és függőségeit teszt forg
 A tesztelési jelentést a tesztkoordinátor készíti el. Ez egy részletes áttekintése a lefutott teszteknek, azok eredményeinek, státuszának és a megjegyzéseknek.
 A tesztkoordinátornak ezután el kell juttatnia a projektmenedzsernek a tesztelési jelentést. 
 
-## 4.3 Tesztelt elvárások
 
-Az alábbi funkcionális elvárások szerepelnek az üzleti, illetve fejlesztői specifikációban, amelyek tesztelésre is kerültek: 
-
-| **#** | **Leírás**|
-| --- | --- |
-| 1. |  |
-| 2. |  |
-| 3. |  |
-| 4. |  |
-| 5. |  |
-| 6. |  |
-
-Az alábbi nem-funkcionális elvárások szerepelnek az üzleti, illetve fejlesztői specifikációban, amelyek tesztelésre is kerültek: 
-
-| **#** | **Leírás**|
-| --- | --- |
-| 1. |  |
-| 2. |  |
-| 3. |  |
-| 4. |  |
-| 5. |  |
-| 6. |  |
-
-Az alábbi elvárások szerepelnek az üzleti, illetve fejlesztői specifikációban, amelyek nem kerültek tesztelésre: 
-
-| **#** | **Leírás**|
-| --- | --- |
-| 1. |  |
-| 2. |  |
-| 3. |  |
-
-## 4.4 Elfogadási kritériumok
+## 4.3 Elfogadási kritériumok
 
 A teszt sikerességének kritériumai:
 
@@ -195,59 +159,6 @@ A teszt sikerességének kritériumai:
 
 ## 4.6 Tesztjegyzőkönyv minta
 
-| **Tesztelési jegyzőkönyv** | |
-|---|---|
-| A teszt-eset leírása és célja: | |
-| A tesztelt folyamat/funkció leírása: | |
-| A tesztelés előfeltételei: | | 
-| A tesztelés dátuma és időpontja: | |
-| A tesztadatok típusa: | |
-| A tesztet végző személy(ek): | |
-|  A tesztelt rendszer beállításai: | |
-| A teszt-eset elvárt eredménye: | |
-|  A tesztelés eredménye: | |
-|  Megjegyzések: |  |
-
-| **Tesztelést elvégezte** | |
-|--|--|
-| Név: | |
-| Szervezeti egység/ beosztás: | |
-| Aláírás: | |
-| Dátum: | |
-
-**Jóváhagyások:**
-
-| **Jóváhagyó** | |
-|--|--|
-| Név: | |
-| Szervezeti egység/ beosztás: | |
-| Aláírás: | |
-| Dátum: | |
-
-## 4.7 Tesztelési jelentés minta
-
-| **Tesztelési jelentés** | |
-|---|---|
-| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye: | |
-| A tesztelt folyamatok/funkciók/modulok leírása: | |
-| A tesztadatok típusa: | | 
-| A tesztelt rendszer beállításai: | |
-| A tesztelések eredménye: | ||
-|  Megjegyzések: |  |
-
-| **Tesztelést elvégezte** | |
-|--|--|
-| Név: | |
-| Szervezeti egység/ beosztás: | |
-| Aláírás: | |
-| Dátum: | |
-
-
-**Jóváhagyások:**
-
-| **Jóváhagyó** | |
-|--|--|
-| Név: | |
-| Szervezeti egység/ beosztás: | |
-| Aláírás: | |
-| Dátum: | |
+|Sorszám| Tesztelendő funkció csoport | Tesztlépés neve | Leírás | Teszt adatok | Elvárt működés | Tesztelő | Teszt eredménye |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Példa | Példa funkció csoport | Példa neve | Példa leírása | Példa adatok | Elvárt példa működés | Példa Pál | Példa eredmény |
