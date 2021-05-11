@@ -42,11 +42,11 @@ Az elfogadási teszt (angolul User Acceptance Test) célja a rendszer teljes fun
 A terheléses teszt célja a tervezett kapacitások, valamint a rendelkezésre álló növekedési potenciál meghatározása.
 
 ## 4. Tesztelési tábla
-|Sorszám| Funkció leírása | Vizsgálat módja/esz köze, részletes leírása | Elvárt eredmény [válaszidő, végrehajtási idő, egységnyi idő alatt végrehajtott tranzakció] | Eredmény | Megfelelősség státusza [Megfelelő, Pótlás határideje:] | Tesztelő |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1. | Főoldal háttérképének megjelenítése | Böngésző általi tesztelés | A háttérkép az oldal teljes területét fedje el. | Az oldalt teljes egészében lefedi. | Megfelelt | Majoros Norbert |
-| 2. | Főoldalon lévő gombok megjelenítése | Böngésző általi tesztelés | A gombok a megadott formázásoknak megfelelően jelenjen meg. | A gombok formázása haladéktalanul működik. | Megfelelt | Majoros Norbert |
-| 3. | Foglalási oldal háttérképének megjelenítése | Böngésző általi tesztelés | A háttérkép az oldal teljes területét fedje el. | Az oldalt teljes egészében lefedi. | Megfelelt  | Majoros Norbert |
-| 4. | Foglalási oldalon lévő gombok megjelenítése | Böngésző általi tesztelés | A gombok a megadott formázásoknak megfelelően jelenjen meg. | A gombok formázása haladéktalanul működik. | Megfelelt | Majoros Norbert |
-| 5. |  |  |  |  |  |
-| 6. |  |  |  |  |  |
+|Sorszám| Tesztelendő funkció csoport | Tesztlépés neve | Leírás | Teszt adatok | Elvárt működés | Tesztelő | Teszt eredménye |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1. | Weboldal felület | Nav baron lévő Home gombra kattintás | A Home feliratú gomb Főoldalra való átjutást eredményezi. | ----------------- | A Home gomb lenyomásával vissza térünk a Főoldalra | Majoros Norbert | Megfelelt |
+| 2. | Weboldal felület | Nav baron lévő Regisztráció gombra kattintás | A Regisztráció gomb lenyomásával átirányít a regisztrációs felületre. | ----------------- | A Regisztráció gomb lenyomását követőn átirányít a regisztrációs oldalra. | Majoros Norbert | Megfelelt |
+| 3. | Weboldal felület | Nav baron lévő Bejelentkezés gombra kattintás |A Bejelentkezés gomb lenyomásával átirányít a bejelentkezés felületre. | ----------------- | A Regisztráció gomb lenyomását követőn átirányít a regisztrációs oldalra. | Majoros Norbert | Megfelelt |
+| 4. | Weboldal felület | Főoldalon lévő Filmborítókra kattintás | Bejelentkezés nélkül nem nyitható meg a foglalási felület ellenben igen. | ----------------- | A Filmborítóra való kattintás nem csinál semmit, mind addig amíg nem jelentkeztünk be. Ezt követően a foglalási oldalra irányít át. | Majoros Norbert | Megfelelt |
+| 5. | Weboldal felület | Főoldal háttérképe | Különböző képernyőméretekre kell változnia, dizájn elemként szolgál | 1080x1920 kép van beszúrva | Illetszkednie minden oldalra, a böngésző méretezése közben | Majoros Norbert | Nem felelt meg |
+| 6. | Weboldal felület | Foglalási oldal háttérképe | Különböző képernyőméretekre kell változnia, dizájn elemként szolgál | 1080x1920 kép van beszúrva | Illetszkednie minden oldalra, a böngésző méretezése közben | Majoros Norbert | Nem felelt meg |
