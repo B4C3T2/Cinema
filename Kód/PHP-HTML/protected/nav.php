@@ -7,7 +7,9 @@
 	<span> &nbsp; | &nbsp; </span>
 	<a href="index.php?P=register">Regisztráció</a>
 <?php else : ?>
+	<span> &nbsp; | &nbsp; </span>
 	<a href="index.php?P=refuse">Lemondás</a>
+	<span> &nbsp; | &nbsp; </span>
 	<a href="index.php?P=logout">Kijelentkezés</a>
 <?php endif; ?>
 

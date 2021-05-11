@@ -19,7 +19,7 @@ img {
 	transition: 3000ms;
 		
 }
-content > table {
+content > form >table {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 250px;

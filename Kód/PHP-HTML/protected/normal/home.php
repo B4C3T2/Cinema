@@ -11,20 +11,22 @@
   <div class="container-fluid">
   	<table>
 		<tr>
-			<th><div class="home"><button type="button"  value="home" style="text-align:center;"> <a href ="index.php?P=home">Hyper Cinema</a> </button></div></th>
+			<th><div class="home"><button type="button"  name="home" style="text-align:center;"> <a href ="index.php?P=home">Hyper Cinema</a> </button></div></th>
 		</tr>
 	</table>
-    <content>
+	<content>
+		<form method="post" action="index.php?P=book">
 		<table>
 			<tr>
-				<th><div class="cover"><button type="submit" value="1" > <a href ="index.php?P=book"><img src="../CSS/pictures/the_gentlemen.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" value="2" > <a href ="index.php?P=book"><img src="../CSS/pictures/007_no_time_to_die.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" value="3" > <a href ="index.php?P=book"><img src="../CSS/pictures/top_gun_2.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" value="4" > <a href ="index.php?P=book"><img src="../CSS/pictures/black_widow.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" value="5" > <a href ="index.php?P=book"><img src="../CSS/pictures/justice_league.jpg" /></a> </button></div></th>
+				<th><div class="cover"><button type="submit" name="1" > <a href ="index.php?P=book"><img src="../CSS/pictures/the_gentlemen.jpg" /></a> </button></div></th>
+				<th><div class="cover"><button type="submit" name="2" > <a href ="index.php?P=book"><img src="../CSS/pictures/007_no_time_to_die.jpg" /></a> </button></div></th>
+				<th><div class="cover"><button type="submit" name="3" > <a href ="index.php?P=book"><img src="../CSS/pictures/top_gun_2.jpg" /></a> </button></div></th>
+				<th><div class="cover"><button type="submit" name="4" > <a href ="index.php?P=book"><img src="../CSS/pictures/black_widow.jpg" /></a> </button></div></th>
+				<th><div class="cover"><button type="submit" name="5" > <a href ="index.php?P=book"><img src="../CSS/pictures/justice_league.jpg" /></a> </button></div></th>
 			</tr>
 		</table>
-	</content>
+		</form>
+	</content>	
   </div>
 </body>
 </html>
