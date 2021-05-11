@@ -9,9 +9,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
     echo "Hiányzó adat(ok)!";
   } else if(!UserLogin($postData['uid'], $postData['password'])) {
     echo "A felhasználónév vagy a jelszó hibás!";
-  } else if(!UserLogin($postData['email'], $postData['password'])) {
-    echo "Hibás email cím vagy jelszó!";
-  }
+  } 
 
   $postData['password'] = "";
 }
@@ -34,24 +32,23 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
     <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz bejelentkezhet,<br> vagy ha még nem tag, hozzáadhatja fiókját a <a href="index.php?P=register" title="Kattintson ide a regisztrációhoz!">regisztráció</a> segítségével.</h2>
     <nav>
       <div class="login-wrapper">
+        <div class="login-wrapper">
         <form action="" class="form">
           <table>
             <tr>
               <td>Felhasználónév:</td>
-              <td><input type="text" name="uid" id="username" maxlength="20" required></td>
+              <td><input type="text" name="uid" id="username" maxlength="20" value="<?= isset($postData) ? $postData['uid'] : '';?>" required></td>
             </tr>
             <tr>
               <td>Jelszó:</td>
-              <td><input type="password" name="password" id="password" maxlength="250" required></td>
+              <td><input type="password" name="password" id="password" maxlength="250" value="" required></td>
             </tr>
             <tr>
               <td>
                 
               </td>
               <td class="bejelgomb">
-                <button type="submit"  value="login" class="btn btn-outline-secondary">
-                  <a href="index.php">Bejelentkezés</a>
-                </button>
+                <button type="submit"  value="login" class="btn btn-outline-secondary" name="login">Bejelentkezés</button>
               </td>
             </tr>
             <tr>
@@ -64,6 +61,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
             </tr>
           </table>
         </form>
+      </div>
       </div>
     </nav>
 
