@@ -9,7 +9,7 @@
 		$query = "DELETE FROM bookingtable WHERE id = :booking_id AND uid = :uid";
 		$params = [
 			':booking_id' => $postData['booking_id'],
-			':uid' = $_SESSION['uid']
+			':uid' => $_SESSION['uid']
 		];
 		require_once DATABASE_CONTROLLER;
 		if(!executeDML($query, $params)) {
