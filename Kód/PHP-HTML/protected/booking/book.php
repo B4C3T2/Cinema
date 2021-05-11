@@ -1,45 +1,47 @@
 <?php
-	if(isset($_POST['1'])){
-		$movieId = 1;
-		$title = "The Gentleman";
-	} else if(isset($_POST['2'])){
-		$movieId = 2;
-		$title = "007 No Time To Die";
-	}else if(isset($_POST['3'])){
-		$movieId = 3;
-		$title = "Top Gun Maverick";
-	}else if(isset($_POST['4'])){
-		$movieId = 4;
-		$title = "Black Widow";
-	}else if(isset($_POST['5'])){
-		$movieId = 5;
-		$title = "Justice League";
-	}
-	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
-		$seatDb = 0;
-		if(!empty($_POST['seats'])) {
-			foreach($_POST['seats'] as $seat){
-				$seatDb = $seatDb + 1;
-			}
-			$postData = [
-				'user_id' => $_SESSION['uid'],
-				'movie_id' => $movieId,
-				'seat_id' => $seatDb
-			];
-			$query = "INSERT INTO bookingtable (uid, movieId, seatId) VALUES (:user_id, :movie_id, :seat_id)";
-			$params = [
-				':user_id' => $postData['user_id'],
-				':movie_id' => $postData['movie_id'],
-				':seat_id' => $postData['seat_id']
-			];
-			require_once DATABASE_CONTROLLER;
-			if(!executeDML($query, $params)) {
-				echo "Hiba az adatbevitel során!";
-			} header('Location: index.php');
-		} else {
-			echo "Ki kell választani székeket a foglaláshoz!";
-		}
-	}	
+
+    if(isset($_POST['1'])){
+        $movieId = 1;
+        $title = "The Gentleman";
+    } else if(isset($_POST['2'])){
+        $movieId = 2;
+        $title = "007 No Time To Die";
+    }else if(isset($_POST['3'])){
+        $movieId = 3;
+        $title = "Top Gun Maverick";
+    }else if(isset($_POST['4'])){
+        $movieId = 4;
+        $title = "Black Widow";
+    }else if(isset($_POST['5'])){
+        $movieId = 5;
+        $title = "Justice League";
+    }
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
+        $seatDb = 0;
+        if(!empty($_POST['seats'])) {
+            foreach($_POST['seats'] as $seat){
+                $seatDb = $seatDb + 1;
+            }
+            $postData = [
+                'user_id' => $_SESSION['uid'],
+                'movie_id' => 2,
+                'seat_id' => $seatDb
+            ];
+            $query = "INSERT INTO bookingtable (uid, movieId, seatId) VALUES (:user_id, :movie_id, :seat_id)";
+            $params = [
+                ':user_id' => $postData['user_id'],
+                ':movie_id' => $postData['movie_id'],
+                ':seat_id' => $postData['seat_id']
+            ];
+            require_once DATABASE_CONTROLLER;
+            if(!executeDML($query, $params)) {
+                echo "Hiba az adatbevitel során!";
+            }// header('Location: index.php');
+        } else {
+            echo "Ki kell választani székeket a foglaláshoz!";
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html>
