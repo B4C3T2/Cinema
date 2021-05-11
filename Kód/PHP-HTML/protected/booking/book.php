@@ -55,6 +55,7 @@
 <body>
   <div class="container-fluid">
     <content>
+        <form method="post">
     	<button type="submit"  name="book" class="btn btn-outline-secondary"><a href ="index.php?P=home">Foglalás</a></button>
     	<p> <?php
     		$title
@@ -97,6 +98,7 @@
 				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat26"></div></td>
 			</tr>
 		</table>
+        </form>
 	</content>
   </div>
 </body>
