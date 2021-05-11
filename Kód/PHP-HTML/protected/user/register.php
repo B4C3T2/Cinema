@@ -53,11 +53,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
             </tr>
             <tr>
               <td>Vezetéknév:</td>
-              <td><input type="text" name="lname" id="lastName" maxlength="20" required></td>
+              <td><input type="text" name="last_name" id="lastName" maxlength="20" required></td>
             </tr>
             <tr>
               <td>Keresztnév:</td>
-              <td><input type="text" name="fname" id="firstName" maxlength="20" required></td>
+              <td><input type="text" name="first_name" id="firstName" maxlength="20" required></td>
             </tr>
             <tr>
               <td>Email:</td>
