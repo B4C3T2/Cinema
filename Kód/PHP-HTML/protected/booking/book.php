@@ -56,7 +56,7 @@
   <div class="container-fluid">
     <content>
         <form method="post">
-    	<button type="submit"  name="book" class="btn btn-outline-secondary"><a href ="index.php?P=home">Foglalás</a></button>
+    	<button type="submit"  name="book" class="btn btn-outline-secondary">Foglalás</button>
     	<p> <?php
     		$title
     	?> </p>
