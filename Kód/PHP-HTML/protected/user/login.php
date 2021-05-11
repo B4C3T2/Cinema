@@ -32,8 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
     <h2>A Hyper Cinema oldalán található filmek böngészéséhez és a jegyfoglaláshoz bejelentkezhet,<br> vagy ha még nem tag, hozzáadhatja fiókját a <a href="index.php?P=register" title="Kattintson ide a regisztrációhoz!">regisztráció</a> segítségével.</h2>
     <nav>
       <div class="login-wrapper">
-        <div class="login-wrapper">
-        <form action="" class="form">
+        <form method="post" class="form">
           <table>
             <tr>
               <td>Felhasználónév:</td>
@@ -61,7 +60,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
             </tr>
           </table>
         </form>
-      </div>
       </div>
     </nav>
 
