@@ -22,24 +22,23 @@
 				$seatDb = $seatDb + 1;
 			}
 			$postData = [
-			'user_id' => $_POST['user_id'],//??
-			'movie_id' => $movieId,
-			'seat_id' => $seatDb
+				'user_id' => $_SESSION['uid'],
+				'movie_id' => $movieId,
+				'seat_id' => $seatDb
 			];
-			} else {
-				$query = "INSERT INTO booking_seats (uid, movieId, seatId) VALUES (:user_id, :movie_id, :seat_id)";
-				$params = [
-					':user_id' => $postData['user_id'],
-					':movie_id' => $postData['movie_id'],
-					':seat_id' => $postData['seat_id']
-				];
-				require_once DATABASE_CONTROLLER;
-				if(!executeDML($query, $params)) {
-					echo "Hiba az adatbevitel során!";
-				} header('Location: index.php');
-			}
+			$query = "INSERT INTO bookingtable (uid, movieId, seatId) VALUES (:user_id, :movie_id, :seat_id)";
+			$params = [
+				':user_id' => $postData['user_id'],
+				':movie_id' => $postData['movie_id'],
+				':seat_id' => $postData['seat_id']
+			];
+			require_once DATABASE_CONTROLLER;
+			if(!executeDML($query, $params)) {
+				echo "Hiba az adatbevitel során!";
+			} header('Location: index.php');
 		} else {
 			echo "Ki kell választani székeket a foglaláshoz!";
+		}
 	}	
 ?>
 <!DOCTYPE html>
