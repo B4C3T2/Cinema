@@ -37,7 +37,7 @@
             require_once DATABASE_CONTROLLER;
             if(!executeDML($query, $params)) {
                 echo "Hiba az adatbevitel során!";
-            }// header('Location: index.php');
+            }   header('Location: index.php');
         } else {
             echo "Ki kell választani székeket a foglaláshoz!";
         }
@@ -49,13 +49,13 @@
   <meta charset="utf-8">
   <title>Hyper Cinema - Foglalás</title>
   <!-- Saját CSS -->
-  <link rel="stylesheet" type="text/css" href="../CSS/foglalas_style.css">
+  <link rel="stylesheet" type="text/css" href="./public/foglalas_style.css">
   <link rel="shortcut icon" href="../../CSS/pictures/icon.png"/>
 </head>
 <body>
   <div class="container-fluid">
     <content>
-    	<button type="submit"  value="book" class="btn btn-outline-secondary"><a href ="index.php?P=home">Foglalás</a></button>
+    	<button type="submit"  name="book" class="btn btn-outline-secondary"><a href ="index.php?P=home">Foglalás</a></button>
     	<p> <?php
     		$title
     	?> </p>
