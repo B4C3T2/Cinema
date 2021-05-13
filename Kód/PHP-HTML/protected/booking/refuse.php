@@ -1,7 +1,7 @@
 <?php
 	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['refuse'])) {
 	$postData = [
-		'booking_id' => $_POST['booking_id']  //ide beégetett értéket írok működik a lemondás
+		'booking_id' => $_POST['bookingId'] 
 	];
 		if(empty($postData['booking_id'])){
 		echo "Hiányzó adat!";
