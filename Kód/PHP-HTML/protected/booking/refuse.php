@@ -1,7 +1,7 @@
 <?php
 	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['refuse'])) {
 	$postData = [
-		'booking_id' => $_POST['booking_id']
+		'booking_id' => $_POST['booking_id']  //ide beégetett értéket írok működik a lemondás
 	];
 		if(empty($postData['booking_id'])){
 		echo "Hiányzó adat!";
@@ -36,7 +36,7 @@
     <header>Lemondás<hr></header>  
     <nav>
       <div class="login-wrapper">
-        <form action="" class="form">
+        <form method="post" class="form">
           <table>
             <tr>
               <td>Fogalalás azonosító:</td>
@@ -44,9 +44,7 @@
             </tr>
             <tr>
               <td class="bejelgomb">
-                <button type="submit"  value="lemondas" class="btn btn-outline-secondary">
-                  <a href ="index.php?P=home">Lemondás</a>
-                </button>
+                <button type="submit"  name="refuse" class="btn btn-outline-secondary">Lemondás</button>
               </td>
             </tr>
           </table>
