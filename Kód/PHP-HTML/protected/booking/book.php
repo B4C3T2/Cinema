@@ -1,43 +1,60 @@
 <?php
-
-    if(isset($_POST['1'])){
-        $movieId = 1;
-        $title = "The Gentleman";
-    } else if(isset($_POST['2'])){
-        $movieId = 2;
-        $title = "007 No Time To Die";
-    }else if(isset($_POST['3'])){
-        $movieId = 3;
-        $title = "Top Gun Maverick";
-    }else if(isset($_POST['4'])){
-        $movieId = 4;
-        $title = "Black Widow";
-    }else if(isset($_POST['5'])){
-        $movieId = 5;
-        $title = "Justice League";
-    }
-
-    if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
         $seatDb = 0;
         if(!empty($_POST['seats'])) {
+			//Foglalandó székek számának vizsgálata
             foreach($_POST['seats'] as $seat){
                 $seatDb = $seatDb + 1;
             }
-            $postData = [
-                'user_id' => $_SESSION['uid'],
-                'movie_id' => 2,
-                'seat_id' => $seatDb
-            ];
-            $query = "INSERT INTO bookingtable (uid, movieId, seatId) VALUES (:user_id, :movie_id, :seat_id)";
-            $params = [
-                ':user_id' => $postData['user_id'],
-                ':movie_id' => $postData['movie_id'],
-                ':seat_id' => $postData['seat_id']
-            ];
-            require_once DATABASE_CONTROLLER;
-            if(!executeDML($query, $params)) {
-                echo "Hiba az adatbevitel során!";
-            }   header('Location: index.php');
+			if($seatDb <= 4){
+				//Foglalás tábla feltöltése
+				$postData = [
+					'user_id' => $_SESSION['uid'],
+					'movie_id' => $_SESSION['movieId']
+				];
+				$query = "INSERT INTO bookingtable (uid, movieId) VALUES (:user_id, :movie_id)";
+				$params = [
+					':user_id' => $postData['user_id'],
+					':movie_id' => $postData['movie_id']
+				];
+				require_once DATABASE_CONTROLLER;
+				if(!executeDML($query, $params)) {
+					echo "Hiba az adatbevitel során!";
+				} 
+				
+				//Foglalási azonosító lekérdezése
+				$postData2 = [
+					'uid' => $_SESSION['uid'],
+					'movieId' => $_SESSION['movieId']
+				];
+				$query2 = "SELECT * FROM bookingtable WHERE uid = :uid AND movieId = :movieId ";
+				$params2 = [
+				    ':uid' => $postData2['uid'],
+					':movieId' => $postData2['movieId']
+				];
+				$record = getRecord($query2, $params2);
+				$bookingId = $record['id'];
+				
+				//Fogalat székek tábla feltöltése
+				foreach($_POST['seats'] as $seatId){
+					$postData3 = [
+						'bookingId' => $bookingId,
+						'seatId' => $seatId
+					];
+					$query3 = "INSERT INTO bookedseats (bookingId, seatId) VALUES (:booking_id, :seat_id)";
+					$params3 = [
+						':booking_id' => $postData3['bookingId'],
+						':seat_id' => $postData3['seatId']
+					];
+					require_once DATABASE_CONTROLLER;
+					if(!executeDML($query3, $params3)) {
+						echo "Hiba az adatbevitel során!";
+					} 
+				}
+				header('Location: index.php');
+			} else {
+				echo "Maximálisan 4 szék foglalható!";
+			}
         } else {
             echo "Ki kell választani székeket a foglaláshoz!";
         }
@@ -62,40 +79,40 @@
     	?> </p>
 		<table>
 			<tr>
-				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat1"></div></th>
-				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat2"></div></th>
-				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat3"></div></th>
-				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat4"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="1" value="1"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="2" value="2"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="3" value="3"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="4" value="4"></div></th>
 				<th></th>
 				<th></th>
-				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat5"></div></th>
-				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat6"></div></th>
-				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat7"></div></th>
-				<th><div class="seat"><input type="checkbox" name="seats[]" id="seat8"></div></th>				
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="5" value="5"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="6" value="6"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="7" value="7"></div></th>
+				<th><div class="seat"><input type="checkbox" name="seats[]" id="8" value="8"></div></th>				
 			</tr>
 			<tr>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat9"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat10"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat11"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat12"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="9" value="9"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="10" value="10"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="11" value="11"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="12" value="12"></div></td>
 				<td></td>
 				<td></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat13"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat14"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat15"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat16"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="13" value="13"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="14" value="14"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="15" value="15"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="16" value="16"></div></td>
 			</tr>
 			<tr>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat17"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat18"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat19"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat20"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat21"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat22"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat23"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat24"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat25"></div></td>
-				<td><div class="seat"><input type="checkbox" name="seats[]" id="seat26"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="17" value="17"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="18" value="18"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="19" value="19"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="20" value="20"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="21" value="21"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="22" value="22"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="23" value="23"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="24" value="24"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="25" value="25"></div></td>
+				<td><div class="seat"><input type="checkbox" name="seats[]" id="26" value="26"></div></td>
 			</tr>
 		</table>
         </form>

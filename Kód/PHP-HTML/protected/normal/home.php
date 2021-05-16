@@ -1,3 +1,27 @@
+<?php
+    if(isset($_POST['1'])){
+        $_SESSION['movieId'] = 1;
+        $_SESSION['title'] = "The Gentleman";
+        header('Location: index.php?P=book');
+    } else if(isset($_POST['2'])){
+        $_SESSION['movieId'] = 2;
+        $_SESSION['title'] = "007 No Time To Die";
+        header('Location: index.php?P=book');
+    }else if(isset($_POST['3'])){
+		$_SESSION['movieId'] = 3;
+        $_SESSION['title'] = "Top Gun Maverick";
+        header('Location: index.php?P=book');
+    }else if(isset($_POST['4'])){
+        $_SESSION['movieId'] = 4;
+        $_SESSION['title'] = "Black Widow";
+        header('Location: index.php?P=book');
+    }else if(isset($_POST['5'])){
+        $_SESSION['movieId'] = 5;
+        $_SESSION['title'] = "Justice League";
+        header('Location: index.php?P=book');
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

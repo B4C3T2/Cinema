@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1:3306
--- Létrehozás ideje: 2021. Máj 10. 12:17
+-- Létrehozás ideje: 2021. Máj 16. 10:44
 -- Kiszolgáló verziója: 10.4.10-MariaDB
 -- PHP verzió: 7.3.12
 
@@ -25,6 +25,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Tábla szerkezet ehhez a táblához `bookedseats`
+--
+
+DROP TABLE IF EXISTS `bookedseats`;
+CREATE TABLE IF NOT EXISTS `bookedseats` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `bookingId` int(255) NOT NULL,
+  `seatId` int(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Tábla szerkezet ehhez a táblához `bookingtable`
 --
 
@@ -33,9 +47,8 @@ CREATE TABLE IF NOT EXISTS `bookingtable` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `uid` int(255) NOT NULL,
   `movieId` int(255) NOT NULL,
-  `seatId` int(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 -- --------------------------------------------------------
 
