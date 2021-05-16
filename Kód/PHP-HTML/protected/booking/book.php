@@ -1,43 +1,60 @@
 <?php
-
-    if(isset($_POST['1'])){
-        $movieId = 1;
-        $title = "The Gentleman";
-    } else if(isset($_POST['2'])){
-        $movieId = 2;
-        $title = "007 No Time To Die";
-    }else if(isset($_POST['3'])){
-        $movieId = 3;
-        $title = "Top Gun Maverick";
-    }else if(isset($_POST['4'])){
-        $movieId = 4;
-        $title = "Black Widow";
-    }else if(isset($_POST['5'])){
-        $movieId = 5;
-        $title = "Justice League";
-    }
-
-    if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
         $seatDb = 0;
         if(!empty($_POST['seats'])) {
+			//Foglalandó székek számának vizsgálata
             foreach($_POST['seats'] as $seat){
                 $seatDb = $seatDb + 1;
             }
-            $postData = [
-                'user_id' => $_SESSION['uid'],
-                'movie_id' => 2,
-                'seat_id' => $seatDb
-            ];
-            $query = "INSERT INTO bookingtable (uid, movieId, seatId) VALUES (:user_id, :movie_id, :seat_id)";
-            $params = [
-                ':user_id' => $postData['user_id'],
-                ':movie_id' => $postData['movie_id'],
-                ':seat_id' => $postData['seat_id']
-            ];
-            require_once DATABASE_CONTROLLER;
-            if(!executeDML($query, $params)) {
-                echo "Hiba az adatbevitel során!";
-            }   header('Location: index.php');
+			if($seatDb <= 4){
+				//Foglalás tábla feltöltése
+				$postData = [
+					'user_id' => $_SESSION['uid'],
+					'movie_id' => $_SESSION['movieId']
+				];
+				$query = "INSERT INTO bookingtable (uid, movieId) VALUES (:user_id, :movie_id)";
+				$params = [
+					':user_id' => $postData['user_id'],
+					':movie_id' => $postData['movie_id']
+				];
+				require_once DATABASE_CONTROLLER;
+				if(!executeDML($query, $params)) {
+					echo "Hiba az adatbevitel során!";
+				} 
+				
+				//Foglalási azonosító lekérdezése
+				$postData2 = [
+					'uid' => $_SESSION['uid'],
+					'movieId' => $_SESSION['movieId']
+				];
+				$query2 = "SELECT * FROM bookingtable WHERE uid = :uid AND movieId = :movieId ";
+				$params2 = [
+				    ':uid' => $postData2['uid'],
+					':movieId' => $postData2['movieId']
+				];
+				$record = getRecord($query2, $params2);
+				$bookingId = $record['id'];
+				
+				//Fogalat székek tábla feltöltése
+				foreach($_POST['seats'] as $seatId){
+					$postData3 = [
+						'bookingId' => $bookingId,
+						'seatId' => $seatId
+					];
+					$query3 = "INSERT INTO bookedseats (bookingId, seatId) VALUES (:booking_id, :seat_id)";
+					$params3 = [
+						':booking_id' => $postData3['bookingId'],
+						':seat_id' => $postData3['seatId']
+					];
+					require_once DATABASE_CONTROLLER;
+					if(!executeDML($query3, $params3)) {
+						echo "Hiba az adatbevitel során!";
+					} 
+				}
+				header('Location: index.php');
+			} else {
+				echo "Maximálisan 4 szék foglalható!";
+			}
         } else {
             echo "Ki kell választani székeket a foglaláshoz!";
         }
