@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
 				];
 				require_once DATABASE_CONTROLLER;
 				if(!executeDML($query, $params)) {
-					echo "Hiba az adatbevitel során!";
+					echo"<p style='color:white;'>" ."Hiba az adatbevitel során!". "</p>";
 				} 
 				
 				//Foglalási azonosító lekérdezése
@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
 					':movieId' => $postData['movieId']
 				];
 				$record = getRecord($query, $params);
-				$bookingId = $record['id']; //ide lehet session lesz
+				$_SESSION['bookingId'] = $record['id'];
 				
 				//Megnézzük, hogy a kiválasztott székek egyike sem foglalt
 				$reservedDb = 0;
@@ -58,7 +58,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
 				if($reservedDb == 0){
 					foreach($_POST['seats'] as $seatId){
 						$postData = [
-							'bookingId' => $bookingId,
+							'bookingId' => $_SESSION['bookingId'],
 							'seatId' => $seatId
 						];
 						$query = "INSERT INTO bookedseats (bookingId, seatId) VALUES (:booking_id, :seat_id)";
@@ -68,13 +68,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
 						];
 						require_once DATABASE_CONTROLLER;
 						if(!executeDML($query, $params)) {
-							echo "Hiba az adatbevitel során!";
+							echo "<p style='color:white;'>" . "Hiba az adatbevitel során!" . "</p>";
 						} 
 					}
 					header('Location: index.php');
 				} else {
 					$postData = [
-							'Id' => $bookingId
+							'Id' => $_SESSION['bookingId']
 						];
 						$query = "DELETE FROM bookingtable WHERE id = :Id";
 						$params = [
@@ -82,15 +82,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
 						];
 						require_once DATABASE_CONTROLLER;
 						if(!executeDML($query, $params)) {
-							echo "Hiba az adatbevitel során!";
+							echo "<p style='color:white;'>" . "Hiba az adatbevitel során!" . "</p>";
 						} 
 				}
-				echo "Valamelyik szék már foglalt!";
+				echo "<p style='color:white;'>" . "Valamelyik szék már foglalt!" . "</p>";
 			} else {
-				echo "Maximálisan 4 szék foglalható!";
+				echo "<p style='color:white;'>" . "Maximálisan 4 szék foglalható!" . "</p>";
 			}
         } else {
-            echo "Ki kell választani székeket a foglaláshoz!";
+            echo "<p style='color:white;'>" . "Ki kell választani székeket a foglaláshoz!" . "</p>";
         }
     }
 ?>
