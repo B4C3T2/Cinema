@@ -23,35 +23,69 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['book'])) {
 				} 
 				
 				//Foglalási azonosító lekérdezése
-				$postData2 = [
+				$postData = [
 					'uid' => $_SESSION['uid'],
 					'movieId' => $_SESSION['movieId']
 				];
-				$query2 = "SELECT * FROM bookingtable WHERE uid = :uid AND movieId = :movieId ";
-				$params2 = [
-				    ':uid' => $postData2['uid'],
-					':movieId' => $postData2['movieId']
+				$query = "SELECT * FROM bookingtable WHERE uid = :uid AND movieId = :movieId ";
+				$params = [
+				    ':uid' => $postData['uid'],
+					':movieId' => $postData['movieId']
 				];
-				$record = getRecord($query2, $params2);
-				$bookingId = $record['id'];
+				$record = getRecord($query, $params);
+				$bookingId = $record['id']; //ide lehet session lesz
+				
+				//Megnézzük, hogy a kiválasztott székek egyike sem foglalt
+				$reservedDb = 0;
+				foreach($_POST['seats'] as $seatId){
+					$postData = [
+						'seatId' => $seatId,
+						'movieId' => $_SESSION['movieId']
+					];
+					$query = "SELECT bookedseats.seatId, bookingtable.movieId FROM bookedseats INNER JOIN bookingtable ON bookedseats.bookingId = bookingtable.id 
+					HAVING bookedseats.seatId = :seatId AND bookingtable.movieId = :movieId";
+					$params = [
+						':seatId' => $postData['seatId'],
+						':movieId' => $postData['movieId']
+					];
+					$record = getRecord($query, $params);
+					if(!empty($record)){
+						$reservedDb = $reservedDb + 1;
+					}
+				}
 				
 				//Fogalat székek tábla feltöltése
-				foreach($_POST['seats'] as $seatId){
-					$postData3 = [
-						'bookingId' => $bookingId,
-						'seatId' => $seatId
-					];
-					$query3 = "INSERT INTO bookedseats (bookingId, seatId) VALUES (:booking_id, :seat_id)";
-					$params3 = [
-						':booking_id' => $postData3['bookingId'],
-						':seat_id' => $postData3['seatId']
-					];
-					require_once DATABASE_CONTROLLER;
-					if(!executeDML($query3, $params3)) {
-						echo "Hiba az adatbevitel során!";
-					} 
+				if($reservedDb == 0){
+					foreach($_POST['seats'] as $seatId){
+						$postData = [
+							'bookingId' => $bookingId,
+							'seatId' => $seatId
+						];
+						$query = "INSERT INTO bookedseats (bookingId, seatId) VALUES (:booking_id, :seat_id)";
+						$params = [
+							':booking_id' => $postData['bookingId'],
+							':seat_id' => $postData['seatId']
+						];
+						require_once DATABASE_CONTROLLER;
+						if(!executeDML($query, $params)) {
+							echo "Hiba az adatbevitel során!";
+						} 
+					}
+					header('Location: index.php');
+				} else {
+					$postData = [
+							'Id' => $bookingId
+						];
+						$query = "DELETE FROM bookingtable WHERE id = :Id";
+						$params = [
+							':Id' => $postData['Id']
+						];
+						require_once DATABASE_CONTROLLER;
+						if(!executeDML($query, $params)) {
+							echo "Hiba az adatbevitel során!";
+						} 
 				}
-				header('Location: index.php');
+				echo "Valamelyik szék már foglalt!";
 			} else {
 				echo "Maximálisan 4 szék foglalható!";
 			}
