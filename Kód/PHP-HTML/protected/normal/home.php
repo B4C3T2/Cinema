@@ -39,14 +39,15 @@
 		</tr>
 	</table>
 	<content>
-		<form method="post" action="index.php?P=book">
+		<form method="post">
 		<table>
+      <p> <?php isset($_SESSION['bookingId']) ? print"Foglalási azonosító: ".$_SESSION['bookingId'] : print" " ?></p>
 			<tr>
-				<th><div class="cover"><button type="submit" name="1" > <a href ="index.php?P=book"><img src="../CSS/pictures/the_gentlemen.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" name="2" > <a href ="index.php?P=book"><img src="../CSS/pictures/007_no_time_to_die.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" name="3" > <a href ="index.php?P=book"><img src="../CSS/pictures/top_gun_2.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" name="4" > <a href ="index.php?P=book"><img src="../CSS/pictures/black_widow.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" name="5" > <a href ="index.php?P=book"><img src="../CSS/pictures/justice_league.jpg" /></a> </button></div></th>
+				<th><div class="cover"><button type="submit" name="1" ><img src="../CSS/pictures/the_gentlemen.jpg" /></button></div></th>
+				<th><div class="cover"><button type="submit" name="2" ><img src="../CSS/pictures/007_no_time_to_die.jpg" /></button></div></th>
+				<th><div class="cover"><button type="submit" name="3" ><img src="../CSS/pictures/top_gun_2.jpg" /></button></div></th>
+				<th><div class="cover"><button type="submit" name="4" ><img src="../CSS/pictures/black_widow.jpg" /></button></div></th>
+				<th><div class="cover"><button type="submit" name="5" ><img src="../CSS/pictures/justice_league.jpg" /></button></div></th>
 			</tr>
 		</table>
 		</form>
