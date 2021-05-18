@@ -1,5 +1,3 @@
-
-
 # HyperTeam - Hyper Cinema tesztelési terv
 
 **A tesztterv célja**
@@ -57,7 +55,7 @@ Az alábbi alap elvárások képezik ennek a teszttervnek az alapját:
 # 2. Szükséges erőforrások
 
 A teszteléshez szükség van egy olyan eszközre, amely az internetre  van csatlakoztatva.
-Az általunk használt erőforrások egyike:
+Az általunk használt erőforrások **egyike**:
 - Processzor: AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx 2.00 GHz
 - RAM: 8 GB
 - Operációs rendszer: Windows 10 Home (64-bit)
@@ -66,24 +64,21 @@ Az általunk használt erőforrások egyike:
 
 ## 2.1 Feladatkörök és felelősségek (tesztcsapat meghatározása)
 
-
-**Feladatkörök és felelősségek**
-
-
 | Feladatkör | Felelősség/tevékenység |
-| --- | --- | --- |
-| Tesztelő | A teszt végrehajtása, Észrevételek dokumentálása, Teszt dokumentáció archiválása |
+| --- | --- |
+| Tesztelő | A teszt végrehajtása, Észrevételek dokumentálása, Teszt dokumentáció archiválása. |
 | Szakértő | A szakértő az észrevételek elemzi és megoldást javasol. |
-| Teszt koordinátor | Teszt terv készítése,  A tesztterv jóváhagyatása a projektmenedzserrel,  Teszt forgatókönyvek létrehozása,  Inkonzisztenciák kezelése,   Helyes és időbeni hibakezelés,   Szükség esetén problémák eszkalálása a projekt menedzsernek,   Végső riport készítése,   Teszt dokumentum archiválása,   Az észrevételek státuszának követése, ill. dokumentálása. |
+| Teszt koordinátor | Teszt terv készítése, A tesztterv jóváhagyatása a projektmenedzserrel, Teszt forgatókönyvek létrehozása, Inkonzisztenciák kezelése, Helyes és időbeni hibakezelés, Szükség esetén problémák eszkalálása a projekt menedzsernek, Végső riport készítése, Teszt dokumentum archiválása, Az észrevételek státuszának követése, ill. dokumentálása. |
 | Projektvezető | Teszt terv jóváhagyása, Teszt forgatókönyv (testscript) jóváhagyása. |
 
 ## 2.2 Tesztkörnyezet
 
 Ebben a részben meg kell határozni, hogy a tesztelés milyen környezetben történjen (fejlesztői vagy tesztkörnyezet), a környezetek hogyan érthetőek el, továbbá a tesztelők milyen hozzáféréssel végezzék a tesztelést.
 
-| Környezet neve és feladata | A hozzáférés módja  | Konfiguráció |
-|-|-|-|-|
-| Fejlesztői környezet | Dokumentáció | Fentebb említett számítógép konfiguráció |
+| Környezet neve és feladata | A hozzáférés módja | Konfiguráció                             |
+| --- | --- | --- |
+| Fejlesztői környezet       | Dokumentáció       | Fentebb említett számítógép konfiguráció |
+
 
 ## 2.3 Tesztadatok
 A teszt végrehajtásához szükséges rekordok (tesztadatok) száma: 3
