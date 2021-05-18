@@ -93,7 +93,7 @@ A terheléses teszt célja a tervezett kapacitások, valamint a rendelkezésre �
 | 12. | Backend tesztelés | Bejelentkezés azonosítása | Böngésző általi tesztelés | Regisztráció után megadott adatokkal képes a felhasználó bejelentkezni. | Megtörténik a bejelentkezés. | Megfelelt | 
 | 13. | Backend tesztelés | Bejelentkezés nem regisztrált adatokkal | Böngésző általi tesztelés | Nem regisztrált felhasználó nem képes bejelentkezni. | A bejelentkezés sikertelen. | Nem felelt meg |
 | 14. | Backend tesztelés | Regisztráció nem megfelelő hosszúságú jelszó megadása | Böngésző általi tesztelés | ----------------- | Regisztráció esetén a jelszó hosszának legalább 3 karakter hosszúnak kell lennie. | Nem felelt meg |
-| 15. | Backend tesztelés | Email cím validáció | Böngésző általi tesztelés | A felhasználónak kötelező valid e-mail címet megadnia(@, stb) | ----------------- | Hiba üzenet az érvénytelen e-mail címről. | Megfelelt |
+| 15. | Backend tesztelés | Email cím validáció | Böngésző általi tesztelés | A felhasználónak kötelező valid e-mail címet megadnia(@, stb) | Hiba üzenet az érvénytelen e-mail címről. | Megfelelt |
 
 
 | Készítette |  Tóth Szabina |
