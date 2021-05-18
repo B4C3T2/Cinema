@@ -1,3 +1,27 @@
+<?php
+    if(isset($_POST['1'])){
+        $_SESSION['movieId'] = 1;
+        $_SESSION['title'] = "The Gentleman";
+        header('Location: index.php?P=book');
+    } else if(isset($_POST['2'])){
+        $_SESSION['movieId'] = 2;
+        $_SESSION['title'] = "007 No Time To Die";
+        header('Location: index.php?P=book');
+    }else if(isset($_POST['3'])){
+		$_SESSION['movieId'] = 3;
+        $_SESSION['title'] = "Top Gun Maverick";
+        header('Location: index.php?P=book');
+    }else if(isset($_POST['4'])){
+        $_SESSION['movieId'] = 4;
+        $_SESSION['title'] = "Black Widow";
+        header('Location: index.php?P=book');
+    }else if(isset($_POST['5'])){
+        $_SESSION['movieId'] = 5;
+        $_SESSION['title'] = "Justice League";
+        header('Location: index.php?P=book');
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,14 +39,15 @@
 		</tr>
 	</table>
 	<content>
-		<form method="post" action="index.php?P=book">
+		<form method="post">
 		<table>
+      <p> <?php isset($_SESSION['bookingId']) ? print"Foglalási azonosító: ".$_SESSION['bookingId'] : print" " ?></p>
 			<tr>
-				<th><div class="cover"><button type="submit" name="1" > <a href ="index.php?P=book"><img src="../CSS/pictures/the_gentlemen.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" name="2" > <a href ="index.php?P=book"><img src="../CSS/pictures/007_no_time_to_die.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" name="3" > <a href ="index.php?P=book"><img src="../CSS/pictures/top_gun_2.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" name="4" > <a href ="index.php?P=book"><img src="../CSS/pictures/black_widow.jpg" /></a> </button></div></th>
-				<th><div class="cover"><button type="submit" name="5" > <a href ="index.php?P=book"><img src="../CSS/pictures/justice_league.jpg" /></a> </button></div></th>
+				<th><div class="cover"><button type="submit" name="1" ><img src="../CSS/pictures/the_gentlemen.jpg" /></button></div></th>
+				<th><div class="cover"><button type="submit" name="2" ><img src="../CSS/pictures/007_no_time_to_die.jpg" /></button></div></th>
+				<th><div class="cover"><button type="submit" name="3" ><img src="../CSS/pictures/top_gun_2.jpg" /></button></div></th>
+				<th><div class="cover"><button type="submit" name="4" ><img src="../CSS/pictures/black_widow.jpg" /></button></div></th>
+				<th><div class="cover"><button type="submit" name="5" ><img src="../CSS/pictures/justice_league.jpg" /></button></div></th>
 			</tr>
 		</table>
 		</form>
