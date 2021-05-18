@@ -13,6 +13,14 @@
 		];
 		require_once DATABASE_CONTROLLER;
 		if(!executeDML($query, $params)) {
+			echo "Önnek nincs ilyen azonisítójú foglalása!";
+		}
+		$query = "DELETE FROM bookedseats WHERE bookingId = :booking_id";
+		$params = [
+			':booking_id' => $postData['booking_id']
+		];
+		require_once DATABASE_CONTROLLER;
+		if(!executeDML($query, $params)) {
 			echo "Hiba az visszautasítás során!";
 		} header('Location: index.php');
 	}
