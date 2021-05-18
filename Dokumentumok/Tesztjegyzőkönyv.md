@@ -66,18 +66,22 @@ A terheléses teszt célja a tervezett kapacitások, valamint a rendelkezésre �
 | Készítette | Heim József |
 | --- | --- |
 | Beosztás | Backend fejlesztő – Junior |
-| Dátum | 2021.05.18. |
+| Dátum | 2021.05.11 / 2021.05.18. |
 | Projekt | **HyperCinema** |
-| Vizsgálat eszköze | Google Chrome, phpMyAdmin adatbázis |
+| Vizsgálat eszköze | OperaGX, phpMyAdmin adatbázis |
 
 **Foglalás és lemondás backendbeli tesztelése**
 
-|Sorszám| Tesztelendő funkció csoport | Tesztlépés neve | Leírás | Teszt adatok | Elvárt működés | Teszt eredménye |
-| ---   | ---                         | ---             | ---    | ---          | ---            | ---             |
-| 1. | Weboldal mögötti php kód | Foglalás gomb működésének vizsgálata | Foglalás gomb megnyomása székek kiválasztása nélkül | ----------------- | Megjelenik egy tájékoztató üzenet a formon, és nem kerül adat az adatbázisba | Megfelelt |
-| 2. | Weboldal mögötti php kód | Foglalás gomb működésének vizsgálata | Foglalás gomb megnyomása székek kiválasztával | ----------------- | Bekerülnek a foglalási adatok az adatbázisba | A film azonosító nem adódik át, ezért csak beégetett adattal működik |
-| 3. | Weboldal mögötti php kód | Lemondás gomb működésének vizsgálata | Lemondás gomb megnyomása nem létező foglalásazonosítóval | foglalásazonosító = 100 | Nem törlődik a foglalás az adatbázisból | Megfelelt |
-| 4. | Weboldal mögötti php kód | Lemondás gomb működésének vizsgálata | Lemondás gomb megnyomása helyes foglalásazonosítóval | foglalásazonosító = 1 | Törlődik a foglalás az adatbázisból | Nem törlődik a rekord az adatbázisból |
+|Sorszám| Tesztelendő funkció csoport | Tesztlépés neve | Leírás | Teszt adatok | Elvárt működés | Teszt eredménye | Dátum |
+| ---   | ---                         | ---             | ---    | ---          | ---            | ---             | ---   |
+| 1. | Weboldal mögötti php kód | Foglalás gomb működésének vizsgálata | Foglalás gomb megnyomása székek kiválasztása nélkül | ----------------- | Megjelenik egy tájékoztató üzenet a formon, és nem kerül adat az adatbázisba | Megfelelt | 2021.05.11. |
+| 2. | Weboldal mögötti php kód | Foglalás gomb működésének vizsgálata | Foglalás gomb megnyomása székek kiválasztával | ----------------- | Bekerülnek a foglalási adatok az adatbázisba | A film azonosító nem adódik át, ezért csak beégetett adattal működik | 2021.05.11. |
+| 3. | Weboldal mögötti php kód | Lemondás gomb működésének vizsgálata | Lemondás gomb megnyomása nem létező foglalásazonosítóval | foglalásazonosító = 100 | Nem törlődik a foglalás az adatbázisból | Megfelelt | 2021.05.11. |
+| 4. | Weboldal mögötti php kód | Lemondás gomb működésének vizsgálata | Lemondás gomb megnyomása helyes foglalásazonosítóval | foglalásazonosító = 1 | Törlődik a foglalás az adatbázisból | Nem törlődik a rekord az adatbázisból | 2020.05.11. |
+| 5. | Weboldal mögötti php kód | Foglalás gomb működésének vizsgálata | Foglalás gomb megnyomása csak szabad székek kiválasztával | 2.film, 1,2,3 indexű székek | Bekerülnek a foglalási adatok az adatbázisba | Megfelelt | 2021.05.18. |
+| 6. | Weboldal mögötti php kód | Foglalás gomb működésének vizsgálata | Foglalás gomb megnyomása úgy, hogy van foglalt szék is a kiválasztottak között | 2.film 3,4 indexű székek | Nem kerülnek a foglalási adatok az adatbázisba, és az oldalon tájékoztatjuk a felhasználót erről | Megfelelt | 2021.05.18. |
+| 7. | Weboldal mögötti php kód | Lemondás gomb működésének vizsgálata | Lemondás gomb működése más felhasználóval, mint aki foglalt | felhasználó: Béla123, foglalási azonosító: 49, foglaló felhasználó: tesztelek| Nem törlődik a foglalás az adatbázisból | Megfelelt | 2021.05.18. |
+| 8. | Weboldal mögötti php kód | Lemondás gomb működésének vizsgálata | Lemondás gomb működése azzal a felhasználóval, aki foglalt | felhasználó: tesztelek, foglalási azonosító: 49, foglaló felhasználó: tesztelek| Törlődik a foglalás az adatbázisból | Megfelelt | 2021.05.18. |
 
 | Készítette | Nagy Milán |
 | --- | --- |
